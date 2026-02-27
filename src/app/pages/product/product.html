@@ -1,0 +1,774 @@
+<!-- Hero Section -->
+<section class="min-h-screen flex items-center bg-gradient-to-b from-white to-gray-50">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+        <!-- Headline -->
+        <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-6">
+            From Raw Clinical Data to
+            <span class="text-blue-600">Submission-Ready Confidence</span>
+        </h1>
+
+        <!-- Subtext -->
+        <p class="text-sm lg:text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Care2Data’s flagship product <strong>KWALIFY™</strong> offers smart clinical data validation and
+            verification for the
+            production of datasets that are accurate, consistent, and ready for regulatory approval before submission.
+        </p>
+
+
+        <!-- CTA -->
+        <div class="flex gap-2 justify-center">
+            <button type="submit"
+                class="flex items-center bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 w-fit">
+                Request a Demo <mat-icon class="text-sm"> keyboard_arrow_right </mat-icon>
+            </button>
+            <button type="submit"
+                class="flex items-center bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 w-fit">
+                Learn More <mat-icon class="text-sm"> keyboard_arrow_right </mat-icon>
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!--  About KWALIFY -->
+<section class="py-10">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+        <!-- Heading -->
+        <h1 class="text-2xl lg:text-4xl font-bold text-center mb-12">
+            About <span class="text-blue-600">KWALIFY</span>
+        </h1>
+
+        <!-- Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+            <!-- Left Content -->
+            <div>
+                <h2 class="text-xl font-semibold text-blue-600 mb-4">
+                    What is KWALIFY?
+                </h2>
+
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    <strong>KWALIFY™</strong> is a modern clinical data validation and verification platform engineered
+                    by data scientists, ontologists, and domain architects. The platform analyzes complex clinical trial
+                    datasets using knowledge graph architecture and contextual validation to identify discrepancies,
+                    inconsistencies, and data integrity risks.
+                </p>
+
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    <strong>KWALIFY™</strong> continuously checks new inputs against a corporate knowledge framework to
+                    detect subtle discrepancies across sources, prevent schema drift, and maintain harmonized,
+                    analysis-ready data.
+                </p>
+
+                <p class="text-gray-700 leading-relaxed">
+                    Built for sponsors, CROs, biotech teams, and regulatory professionals, KWALIFY enhances data
+                    accuracy, reliability, and semantic relationships across datasets — without the manual burden of
+                    traditional rule-based checks or double programming.
+                </p>
+            </div>
+
+            <!-- Right Content (Optional Image / Illustration / Card) -->
+            <div class=" flex items-center justify-center">
+                <p class="text-gray-400 text-center">
+                    <!-- <img src="/assets/logo.png" alt=""> -->
+                </p>
+            </div>
+
+        </div>
+
+        <h1 class="text-2xl lg:text-4xl font-bold mt-10 mb-8 text-center">
+            Benefits at a Glance
+        </h1>
+
+        <div class="max-w-3xl mx-auto">
+            <mat-accordion multi="false" class="flex flex-col gap-2">
+
+                <!-- Panel 1 -->
+                <mat-expansion-panel #panel1 hideToggle class="my-2">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="text-xs md:text-md font-semibold">
+                            Identify issues early
+                        </mat-panel-title>
+
+                        <mat-icon>
+                            {{ panel1.expanded ? 'remove' : 'add' }}
+                        </mat-icon>
+                    </mat-expansion-panel-header>
+
+                    <p class="text-left text-xs md:text-sm opacity-75">
+                        Detect errors at early lifecycle stages.
+                    </p>
+                </mat-expansion-panel>
+
+                <!-- Panel 2 -->
+                <mat-expansion-panel #panel2 hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="text-xs md:text-md font-semibold">
+                            Faster resolution timelines
+                        </mat-panel-title>
+
+                        <mat-icon>
+                            {{ panel2.expanded ? 'remove' : 'add' }}
+                        </mat-icon>
+                    </mat-expansion-panel-header>
+
+                    <p class="text-left text-xs md:text-sm opacity-75">
+                        Reduce rework and downstream validation cycles.
+                    </p>
+                </mat-expansion-panel>
+
+                <!-- Panel 3 -->
+                <mat-expansion-panel #panel3 hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="text-xs md:text-md font-semibold">
+                            Deliver accurate, submission-ready data
+                        </mat-panel-title>
+
+                        <mat-icon>
+                            {{ panel3.expanded ? 'remove' : 'add' }}
+                        </mat-icon>
+                    </mat-expansion-panel-header>
+
+                    <p class="text-left text-xs md:text-sm opacity-75">
+                        Ensure accuracy, timelines, and compliance outcomes.
+                    </p>
+                </mat-expansion-panel>
+
+            </mat-accordion>
+        </div>
+    </div>
+</section>
+
+<!-- How KWALIFY Works -->
+<section class="py-10 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="text-center mb-10">
+            <h2 class="text-2xl lg:text-4xl font-bold mb-4">
+                How <span class="text-blue-600">KWALIFY</span> Works
+            </h2>
+            <p class="text-sm lg:text-lg text-gray-600 max-w-3xl mx-auto">
+                From Data Collection to Submission-Ready Confidence
+            </p>
+            <p class="text-gray-500 mt-3 max-w-4xl mx-auto">
+                KWALIFY follows a structured, intelligent workflow that strengthens clinical data integrity across the
+                validation lifecycle.
+            </p>
+        </div>
+
+        <!-- Steps Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Step 1 -->
+            <div class="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                <div class="text-blue-600 font-bold text-lg mb-3">Step 1</div>
+                <h3 class="font-semibold text-xl mb-4">
+                    Data Integration & Representation
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Clinical trial data is ingested through EDC/CDMS and related sources, represented using standard
+                    terminologies and knowledge models to create a harmonised foundation for validation.
+                </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                <div class="text-blue-600 font-bold text-lg mb-3">Step 2</div>
+                <h3 class="font-semibold text-xl mb-4">
+                    Semantic Association & Inference
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    KWALIFY analyses relationships and dependencies across datasets to identify implicit, missing, or
+                    contradictory data points.
+                </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                <div class="text-blue-600 font-bold text-lg mb-3">Step 3</div>
+                <h3 class="font-semibold text-xl mb-4">
+                    Contextual Validation & Intelligent Rules
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Detects discrepancies beyond traditional rule-based checks using context-aware validation logic to
+                    uncover complex, cross-variable inconsistencies.
+                </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                <div class="text-blue-600 font-bold text-lg mb-3">Step 4</div>
+                <h3 class="font-semibold text-xl mb-4">
+                    Actionable, Submission-Ready Outputs
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Clear, interpretable validation results enable faster issue resolution and delivery of audit-ready,
+                    regulatory-compliant datasets.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Key Features -->
+<section class="py-10 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="text-center mb-7">
+            <h2 class="text-2xl lg:text-4xl font-bold">
+                Key <span class="text-blue-600">Features</span>
+            </h2>
+            <p class="text-gray-500 mt-4 max-w-2xl mx-auto">
+                Intelligent validation capabilities designed for modern clinical data environments.
+            </p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <!-- Feature 1 -->
+            <div class="group bg-white p-8 rounded-2xl shadow-sm border border-gray-100 
+                  hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-20 transition-all duration-300"></div>
+
+                <h3 class="font-semibold text-xl mb-2">
+                    Automated Data Validation
+                </h3>
+
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Automatic clinical data validation that identifies cross-dataset inconsistencies, minimising manual
+                    quality control and duplicate programming
+                </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="group bg-white p-8 rounded-2xl shadow-sm border border-gray-100 
+                  hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-20 transition-all duration-300"></div>
+
+                <h3 class="font-semibold text-xl mb-4">
+                    Semantic Intelligence
+                </h3>
+
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Application of semantic inference uncovering context aware inconsistencies beyond rule-based
+                    validation
+                </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="group bg-white p-8 rounded-2xl shadow-sm border border-gray-100 
+                  hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-20 transition-all duration-300"></div>
+
+                <h3 class="font-semibold text-xl mb-4">
+                    Regulatory Compliance & Traceability
+                </h3>
+
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    End-to-end traceable validation and audit trails that align with regulatory requirements including
+                    21 CFR Part 11
+                </p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="group bg-white p-8 rounded-2xl shadow-sm border border-gray-100 
+                  hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-20 transition-all duration-300"></div>
+
+                <h3 class="font-semibold text-xl mb-4">
+                    Quality Dashboards & Actionable Insights
+                </h3>
+
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Real-time dashboards that allow users to analyse quality issues, enable prioritisation, track
+                    workflows, and resolutions of discrepancies at a glance
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Why Traditional Validation Falls Short -->
+<section class="py-10 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-6xl mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="text-center mb-10">
+            <h2 class="text-3xl lg:text-4xl font-bold">
+                Why Traditional <span class="text-blue-600">Validation Falls Short</span>
+            </h2>
+
+            <p class="text-gray-600 mt-5 max-w-3xl mx-auto leading-relaxed">
+                As clinical datasets grow in scale and complexity, traditional validation
+                approaches such as manual review and double programming struggle to keep pace.
+            </p>
+        </div>
+
+        <!-- Simple Bullet Layout -->
+        <div class="max-w-lg mx-auto ">
+            <ul class="space-y-4 text-gray-700 text-lg">
+
+                <li class="flex text-xs md:text-lg gap-3">
+                    <span class="text-blue-600 font-bold">—</span>
+                    High time and operational cost
+                </li>
+
+                <li class="flex text-xs md:text-lg gap-3">
+                    <span class="text-blue-600 font-bold">—</span>
+                    Heavy reliance on manual effort and expertise
+                </li>
+
+                <li class="flex text-xs md:text-lg gap-3">
+                    <span class="text-blue-600 font-bold">—</span>
+                    Human and inter-rater variability
+                </li>
+
+                <li class="flex text-xs md:text-lg gap-3">
+                    <span class="text-blue-600 font-bold">—</span>
+                    Limited scope of discrepancy detection
+                </li>
+
+                <li class="flex text-xs md:text-lg gap-3">
+                    <span class="text-blue-600 font-bold">—</span>
+                    Lack of contextual and semantic validation
+                </li>
+
+                <li class="flex text-xs md:text-lg gap-3">
+                    <span class="text-blue-600 font-bold">—</span>
+                    Need for additional downstream QC cycles
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Closing Line -->
+        <div class="text-center mt-12">
+            <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                As a result, traditional methods struggle to scale and often fail to detect deeper data inconsistencies,
+                creating risk during regulatory submission.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Why Choose -->
+<section class="py-10 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="text-center mb-7">
+            <h2 class="text-2xl lg:text-4xl font-bold">
+                Why Choose <span class="text-blue-600">KWALIFY</span>| Business <span
+                    class="text-blue-600">Benefits</span>
+            </h2>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2  gap-5">
+
+            <!-- Feature 1 -->
+            <div class="group bg-white p-8 rounded-2xl shadow-sm border border-gray-100 
+                  hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-20 transition-all duration-300"></div>
+
+                <h3 class="font-semibold text-xl mb-2">
+                    Trustworthy Data/Data you can Trust
+                </h3>
+
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Enhanced accuracy and consistent data through early stage detection and analysis of complex
+                    discrepancies
+                </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="group bg-white p-8 rounded-2xl shadow-sm border border-gray-100 
+                  hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-20 transition-all duration-300"></div>
+
+                <h3 class="font-semibold text-xl mb-4">
+                    Shorten Cycle Times
+                </h3>
+
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Reduced rework and accelerated dataset readiness for QA/regulatory submission through automated,
+                    intelligent validation workflows
+                </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="group bg-white p-8 rounded-2xl shadow-sm border border-gray-100 
+                  hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-20 transition-all duration-300"></div>
+
+                <h3 class="font-semibold text-xl mb-4">
+                    Mitigate Regulatory Risk
+                </h3>
+
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Smoother submissions with fewer regulatory queries with traceable validation outputs and audit-ready
+                    processes
+                </p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="group bg-white p-8 rounded-2xl shadow-sm border border-gray-100 
+                  hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-20 transition-all duration-300"></div>
+
+                <h3 class="font-semibold text-xl mb-4">
+                    Scalable Across Trials
+                </h3>
+
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    KWALIFY scales seamlessly from Phase I studies to large, multi-centre clinical trials without
+                    increasing operational burden.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- What Makes KWALIFY Different -->
+<section class="py-10 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-14">
+            <h2 class="text-2xl lg:text-4xl font-bold mb-4">
+                <span class="text-blue-600">KWALIFY</span> Supports Your Role
+            </h2>
+            <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Designed to meet the distinct needs of CROs, sponsors, and regulatory teams
+                involved in clinical trial data validation.
+            </p>
+        </div>
+
+        <!-- CRO Card -->
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white rounded-2xl shadow-md p-5 border border-gray-100 
+                  hover:shadow-xl transition duration-300">
+
+                    <!-- Headline -->
+                    <h3 class="text-2xl font-bold mb-6">
+                        Scale Clinical Data Validation with Confidence
+                    </h3>
+
+                    <!-- Bullets -->
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">•</span>
+                            Reduce reliance on manual QC and double programming
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">•</span>
+                            Standardize validation across studies and sponsors
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">•</span>
+                            Accelerate dataset readiness without increasing headcount
+                        </li>
+                    </ul>
+
+                    <!-- Outcome Highlight -->
+                    <div class="mt-8 p-4 bg-blue-50 rounded-xl border border-blue-100">
+                        <p class="text-blue-700 font-semibold">
+                            ✔ Faster delivery · Predictable quality · Lower operational burden
+                        </p>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="mt-8">
+                        <button type="submit"
+                            class="flex items-center bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 w-fit">
+                            View CRO Demo <mat-icon class="text-sm"> keyboard_arrow_right </mat-icon>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="bg-white rounded-2xl shadow-md p-5 border border-gray-100 
+                  hover:shadow-xl transition duration-300">
+
+                    <!-- Headline -->
+                    <h3 class="text-2xl font-bold mb-6">
+                        Strengthen Confidence in Submissions
+                    </h3>
+
+                    <!-- Bullets -->
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">•</span>
+                            Detect discrepancies earlier in the analysis lifecycle
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">•</span>
+                            Improve accuracy and consistency of submission datasets
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">•</span>
+                            Enhance oversight across CRO partners
+                        </li>
+                    </ul>
+
+                    <!-- Outcome Highlight -->
+                    <div class="mt-8 p-4 bg-blue-50 rounded-xl border border-blue-100">
+                        <p class="text-blue-700 font-semibold">
+                            ✔ Higher-quality submissions · Fewer regulatory queries
+                        </p>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="mt-8">
+                        <button type="submit"
+                            class="flex items-center bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 w-fit">
+                            Explore Sponsor Use Cases <mat-icon class="text-sm"> keyboard_arrow_right </mat-icon>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="bg-white rounded-2xl shadow-md p-5 border border-gray-100 
+                  hover:shadow-xl transition duration-300">
+
+                    <!-- Headline -->
+                    <h3 class="text-2xl font-bold mb-6">
+                        Enable Transparent, Audit-Ready Review
+                    </h3>
+
+                    <!-- Bullets -->
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">•</span>
+                            Improve visibility into validation logic and outcomes
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">•</span>
+                            Support traceability and audit readiness
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-blue-600 font-bold">•</span>
+                            Align with data integrity and compliance expectations
+                        </li>
+                    </ul>
+
+                    <!-- Outcome Highlight -->
+                    <div class="mt-8 p-4 bg-blue-50 rounded-xl border border-blue-100">
+                        <p class="text-blue-700 font-semibold">
+                            ✔ Clear audit trails · Efficient review processes
+                        </p>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="mt-8">
+                        <button type="submit"
+                            class="flex items-center bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 w-fit">
+                            Request QA / Regulatory Walkthrough <mat-icon class="text-sm"> keyboard_arrow_right
+                            </mat-icon>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Explore KWALIFY’s -->
+<section class="py-10 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-7">
+            <h2 class="text-2xl lg:text-4xl font-bold mb-4">
+                Explore KWALIFY’s Proof of Concept
+            </h2>
+            <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Experience intelligent clinical data validation in action and see how KWALIFY strengthens data accuracy,
+                regulatory confidence, and operational efficiency.
+            </p>
+        </div>
+
+        <div class="mt-8 text-center">
+            <button type="submit"
+                class="flex items-center bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 w-fit mx-auto">
+                Request a Personalized Demo <mat-icon class="text-sm"> keyboard_arrow_right </mat-icon>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Frequently Asked Questions -->
+<section class="py-10 bg-gradient-to-b from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <h1 class="text-2xl lg:text-4xl font-bold mt-10 mb-8 text-center">
+            Frequently Asked Questions
+        </h1>
+
+        <div class="max-w-3xl mx-auto">
+            <mat-accordion multi="false" class="flex flex-col gap-2">
+
+                <!-- Panel 1 -->
+                <mat-expansion-panel #faqpanel1 hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="text-xs md:text-md font-semibold">
+                            What is KWALIFY?
+                        </mat-panel-title>
+
+                        <mat-icon class="border border-gray-500 rounded-full">
+                            {{ faqpanel1.expanded ? 'arrow_upward' : 'arrow_downward' }}
+                        </mat-icon>
+                    </mat-expansion-panel-header>
+
+                    <p class="text-xs md:text-sm opacity-75">
+                        KWALIFY™ is an <strong>intelligent clinical data validation and verification platform</strong>
+                        developed by
+                        <strong>Care2Data</strong> to identify discrepancies, inconsistencies, and data integrity issues
+                        in clinical
+                        trial analysis datasets prior to regulatory submission.
+                    </p>
+                </mat-expansion-panel>
+
+                <!-- Panel 2 -->
+                <mat-expansion-panel #faqpanel2 hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="text-xs md:text-md font-semibold">
+                            How does KWALIFY validate clinical trial data?
+                        </mat-panel-title>
+
+                        <mat-icon class="border border-gray-500 rounded-full">
+                            {{ faqpanel2.expanded ? 'arrow_upward' : 'arrow_downward' }}
+                        </mat-icon>
+                    </mat-expansion-panel-header>
+
+                    <p class="text-xs md:text-sm opacity-75">
+                        KWALIFY applies <strong>semantic relationships, inference techniques, contextual
+                            validation,</strong> and
+                        <strong>intelligent rule application</strong> to detect both explicit and implicit data
+                        inconsistencies that
+                        traditional validation methods may miss.
+                    </p>
+                </mat-expansion-panel>
+
+                <!-- Panel 3 -->
+                <mat-expansion-panel #faqpanel3 hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="text-xs md:text-md font-semibold">
+                            How is KWALIFY different from double programming?
+                        </mat-panel-title>
+
+                        <mat-icon class="border border-gray-500 rounded-full">
+                            {{ faqpanel3.expanded ? 'arrow_upward' : 'arrow_downward' }}
+                        </mat-icon>
+                    </mat-expansion-panel-header>
+
+                    <p class="text-xs md:text-sm opacity-75">
+                        Unlike <strong>double programming</strong>, which relies heavily on manual effort and duplicate
+                        code, KWALIFY
+                        introduces an <strong>intelligent, multi-faceted validation approach</strong> that improves
+                        coverage, reduces
+                        time and cost, and minimizes human variability.
+                    </p>
+                </mat-expansion-panel>
+
+                <!-- Panel 4 -->
+                <mat-expansion-panel #faqpanel4 hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="text-xs md:text-md font-semibold">
+                            Who should use KWALIFY?
+                        </mat-panel-title>
+
+                        <mat-icon class="border border-gray-500 rounded-full">
+                            {{ faqpanel4.expanded ? 'arrow_upward' : 'arrow_downward' }}
+                        </mat-icon>
+                    </mat-expansion-panel-header>
+
+                    <div class="opacity-75">
+                        <!-- Headline -->
+                        <p class="text-md font-medium mb-2">
+                            KWALIFY is designed for:
+                        </p>
+
+                        <!-- Bullets -->
+                        <ul class="text-xs md:text-md text-gray-700">
+                            <li class="flex gap-3">
+                                <span class="text-blue-600 font-bold">•</span>
+                                Contract Research Organizations (CROs)
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-blue-600 font-bold">•</span>
+                                Pharmaceutical & Biotech Sponsors
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-blue-600 font-bold">•</span>
+                                Clinical Data Management & Biostatistics Teams
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-blue-600 font-bold">•</span>
+                                Quality Assurance & Regulatory Affairs Professionals
+                            </li>
+                        </ul>
+                    </div>
+                </mat-expansion-panel>
+
+                <!-- Panel 5 -->
+                <mat-expansion-panel #faqpanel5 hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="text-xs md:text-md font-semibold">
+                            Is KWALIFY suitable for regulatory submissions?
+                        </mat-panel-title>
+
+                        <mat-icon class="border border-gray-500 rounded-full">
+                            {{ faqpanel5.expanded ? 'arrow_upward' : 'arrow_downward' }}
+                        </mat-icon>
+                    </mat-expansion-panel-header>
+
+                    <p class="text-xs md:text-sm opacity-75">
+                        Yes. KWALIFY supports <strong>submission-ready, audit-ready datasets</strong> and aligns with
+                        <strong>regulatory expectations</strong>, including <strong>data integrity, traceability, and 21
+                            CFR Part 11 compliance</strong>.
+                    </p>
+                </mat-expansion-panel>
+
+                <!-- Panel 6 -->
+                <mat-expansion-panel #faqpanel6 hideToggle>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="text-xs md:text-md font-semibold">
+                            What types of clinical data does KWALIFY support?
+                        </mat-panel-title>
+
+                        <mat-icon class="border border-gray-500 rounded-full">
+                            {{ faqpanel6.expanded ? 'arrow_upward' : 'arrow_downward' }}
+                        </mat-icon>
+                    </mat-expansion-panel-header>
+
+                    <p class="text-xs md:text-sm opacity-75">
+                        KWALIFY supports <strong>clinical trial analysis datasets</strong>, including derived variables
+                        and structured
+                        clinical data used for analysis and regulatory reporting.
+                    </p>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+    </div>
+</section>

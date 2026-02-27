@@ -1,0 +1,96 @@
+// Include theming for Angular Material with `mat.theme()`.
+// This Sass mixin will define CSS variables that are used for styling Angular Material
+// components according to the Material 3 design spec.
+// Learn more about theming and how to use it for your application's
+// custom components at https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+
+html {
+  @include mat.theme((color: (primary: mat.$azure-palette,
+        tertiary: mat.$blue-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    ));
+}
+
+body {
+  // Default the application to a light color theme. This can be changed to
+  // `dark` to enable the dark color theme, or to `light dark` to defer to the
+  // user's system settings.
+  color-scheme: light;
+
+  // Set a default background, font and text colors for the application using
+  // Angular Material's system-level CSS variables. Learn more about these
+  // variables at https://material.angular.dev/guide/system-variables
+
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+
+  // Reset the user agent margin.
+  margin: 0;
+}
+
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --font-inter: 'Inter', sans-serif, system-ui;
+  --bg-primary: #417ae3;
+  --bg-secondary: #f0ca33;
+  --primary-color: #417ae3;
+  --secondary-color: #f0ca33;
+  --container-6xl: 85rem;
+  --background-color: #fafafa;
+}
+
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-inter);
+  background-color: #FFFFFF;
+}
+
+.bg-primary {
+  background-color: var(--bg-primary);
+  color: var(--secondary-color);
+}
+
+.bg-secondary {
+  background-color: var(--bg-primary);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.max-w-6xl {
+  max-width: var(--container-6xl);
+}
+
+.bg-react {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 100%) rgba(255, 255, 255, 0.8);
+  width: 100%;
+  opacity: 1;
+}
+
+.nav-link {
+  @apply font-medium opacity-75 hover:text-blue-600 transition duration-200;
+}
+
+.mobile-link {
+  @apply block font-medium opacity-75 hover:text-blue-600 transition duration-200;
+}
+
+.mat-mdc-form-field-subscript-wrapper {
+  height: 0;
+  margin: 0;
+}

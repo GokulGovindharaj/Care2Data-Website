@@ -1,0 +1,127 @@
+<section class="pt-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4 md:px-6">
+
+    <!-- Page Title -->
+    <div class="text-center mb-7">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">
+        Contact
+      </h1>
+      <p class="text-md text-gray-500 mb-6">
+        Let’s discuss your data challenges.
+      </p>
+      <div class="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
+    </div>
+
+    <div class="max-w-3xl mx-auto">
+
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-6">
+
+        <!-- Name -->
+        <div class="mb-2">
+          <p class="mb-2 font-medium">Name</p>
+          <mat-form-field appearance="outline" class="w-full">
+            <input matInput formControlName="name" />
+          </mat-form-field>
+
+          <p class="text-red-500 text-sm mt-1"
+            *ngIf="(submitted || contactForm.get('name')?.touched) && contactForm.get('name')?.errors?.['required']">
+            Name is required
+          </p>
+
+          <p class="text-red-500 text-sm mt-1"
+            *ngIf="(submitted || contactForm.get('name')?.touched) && contactForm.get('name')?.errors?.['minlength']">
+            Minimum 3 characters required
+          </p>
+
+          <p class="text-red-500 text-sm mt-1"
+            *ngIf="(submitted || contactForm.get('name')?.touched) && contactForm.get('name')?.errors?.['pattern']">
+            Only alphabets and spaces are allowed
+          </p>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-2">
+          <p class="mb-2 font-medium">Work Email</p>
+          <mat-form-field appearance="outline" class="w-full">
+            <input matInput type="email" formControlName="email" />
+          </mat-form-field>
+
+          <p class="text-red-500 text-sm mt-1"
+            *ngIf="(submitted || contactForm.get('email')?.touched) && contactForm.get('email')?.errors?.['required']">
+            Email is required
+          </p>
+
+          <p class="text-red-500 text-sm mt-1"
+            *ngIf="(submitted || contactForm.get('email')?.touched) && contactForm.get('email')?.errors?.['email']">
+            Please enter a valid email address
+          </p>
+        </div>
+
+        <!-- Organization -->
+        <div class="mb-2">
+          <p class="mb-2 font-medium">Organization</p>
+          <mat-form-field appearance="outline" class="w-full">
+            <input matInput formControlName="organization" />
+          </mat-form-field>
+        </div>
+
+        <!-- Area of Interest Dropdown -->
+        <div>
+          <p class="mb-2 font-medium">Area of Interest</p>
+          <mat-form-field appearance="outline" class="w-full">
+            <mat-select formControlName="interest">
+              <mat-option value="validation">Clinical Validation</mat-option>
+              <mat-option value="ontology">Ontology Modeling</mat-option>
+              <mat-option value="knowledge">Knowledge Systems</mat-option>
+              <mat-option value="consulting">Regulatory Consulting</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <p class="text-red-500 text-sm mt-1"
+            *ngIf="(submitted || contactForm.get('interest')?.touched) && contactForm.get('interest')?.errors?.['required']">
+            Area of Interest is required
+          </p>
+        </div>
+
+        <!-- Message -->
+        <div class="mb-2">
+          <p class="mb-2 font-medium">Message</p>
+          <mat-form-field appearance="outline" class="w-full">
+            <textarea matInput rows="5" formControlName="message"></textarea>
+          </mat-form-field>
+
+          <p class="text-red-500 text-sm mt-1"
+            *ngIf="(submitted || contactForm.get('message')?.touched) && contactForm.get('message')?.errors?.['required']">
+            Message is required
+          </p>
+
+          <p class="text-red-500 text-sm mt-1"
+            *ngIf="(submitted || contactForm.get('message')?.touched) && contactForm.get('message')?.errors?.['minlength']">
+            Minimum 10 characters required
+          </p>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit"
+          class="w-full bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+    <!-- DIRECT EMAIL SECTION -->
+    <div class="pt-12">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+
+        <h2 class="text-xl font-semibold mb-4">
+          Prefer to email us directly?
+        </h2>
+
+        <a href="mailto:contact@care2data.com" class="text-blue-600 font-medium hover:underline">
+          contact@care2data.com
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
