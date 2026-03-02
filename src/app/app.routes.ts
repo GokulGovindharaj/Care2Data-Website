@@ -8,9 +8,12 @@ import { Product } from './pages/product/product';
 
 export const routes: Routes = [
     { path: '', component: Home },
-    { path: 'about', component: About },
-    { path: 'contact', component: Contact },
+    { path: 'about-us', component: About },
+    { path: 'contact-us', component: Contact },
     { path: 'careers', component: Careers },
     { path: 'product', component: Product },
-    { path: 'knowledge-services', component: KnowledgeServices }
+    { path: 'knowledge-services', component: KnowledgeServices },
+
+    // Wildcard MUST be last
+    { path: '**', redirectTo: '' }
 ];

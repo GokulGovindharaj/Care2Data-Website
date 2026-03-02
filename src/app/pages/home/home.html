@@ -1,28 +1,40 @@
 <!-- Hero Section -->
 <section class="min-h-screen flex items-center bg-white">
-  <div class="max-w-5xl mx-auto px-6 text-center">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center w-full">
 
-    <!-- Headline -->
-    <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-6">
-      Where Clinical Data Validation
-      <span class="text-blue-600">Becomes Intelligent</span>
-    </h1>
+    <!-- Left Content -->
+    <div class="w-full lg:w-1/2 text-left">
 
-    <!-- Subtext -->
-    <p class="text-lg lg:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-      Care2Data applies semantic intelligence and reasoning over a linked clinical data model —
-      moving beyond pass/fail checks to identify root causes, explain impact, and guide what to fix before submission.
-    </p>
+      <!-- Headline -->
+      <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-6">
+        Where Clinical Data Validation
+        <span class="text-blue-600">Becomes Intelligent</span>
+      </h1>
 
-    <!-- Tagline -->
-    <p class="text-sm uppercase tracking-widest text-gray-400 mb-10">
-      Accuracy • Consistency • Scalability
-    </p>
+      <!-- Subtext -->
+      <p class="text-lg lg:text-xl text-gray-600 mb-8 leading-relaxed">
+        Care2Data applies semantic intelligence and reasoning over a linked clinical data model —
+        moving beyond pass/fail checks to identify root causes, explain impact, and guide what to fix before submission.
+      </p>
 
-    <!-- CTA -->
-    <a routerLink="/contact"
-      class="flex items-center gap-2 bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 w-fit mx-auto">
-      Request a Demo <mat-icon class="text-sm"> keyboard_arrow_right </mat-icon> </a>
+      <!-- Tagline -->
+      <p class="text-sm uppercase tracking-widest text-gray-400 mb-10">
+        Accuracy • Consistency • Scalability
+      </p>
+
+      <!-- CTA -->
+      <a routerLink="/contact"
+        class="flex items-center text-xs md:text-sm gap-2 bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 w-fit">
+        Request a Demo
+        <mat-icon class="text-sm">keyboard_arrow_right</mat-icon>
+      </a>
+
+    </div>
+
+    <!-- Right Image -->
+    <div class="w-full lg:w-1/2 flex justify-center mt-10 lg:mt-0">
+      <!-- <img src="assets/logo.png" routerLink="/" alt="logo" class="w-64 lg:w-96 object-contain"> -->
+    </div>
 
   </div>
 </section>
@@ -36,7 +48,7 @@
       Where Validation Becomes Intelligence
     </h1>
 
-    <p class="text-md text-gray-500 mb-6 text-center leading-relaxed">
+    <p class="text-lg lg:text-xl text-gray-500 mb-6 text-center leading-relaxed">
       Clinical trials aren’t failing because of too much data. <br>
       They’re failing because validation still relies on rules that don’t understand it.
     </p>
@@ -45,7 +57,7 @@
       Flags don’t solve problems. Intelligence does.
     </p>
 
-    <p class="text-md text-gray-500 text-center mb-12">
+    <p class="text-gray-600 text-center max-w-3xl mx-auto leading-relaxed mb-8">
       Validation stops being a checklist. <br>
       It becomes reasoning.
     </p>
@@ -130,7 +142,7 @@
     </div>
     <!-- CTA INSIDE SAME CARD -->
     <div class="text-center mt-8">
-      <a routerLink="/contact" class="inline-flex items-center gap-3 cursor-pointer
+      <a routerLink="/contact" class="inline-flex items-center gap-3 cursor-pointer text-xs md:text-sm
                  bg-blue-600 px-8 py-3 border
                  rounded-xl text-white font-semibold
                  shadow-md transition-all duration-300
@@ -153,7 +165,7 @@
       Built to Work Alongside Your Team
     </h1>
 
-    <p class="text-md text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+    <p class="text-lg lg:text-xl text-gray-600 mb-6 max-w-3xl mx-auto leading-relaxed">
       Care2Data partners with sponsors to embed semantic intelligence into clinical operations —
       without disrupting existing systems.
     </p>
@@ -165,7 +177,7 @@
       <div class="bg-white rounded-2xl shadow-md p-8 border border-gray-100 hover:shadow-xl transition duration-300">
 
         <div class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-50 mb-6">
-          <mat-icon class="text-blue-600">track_changes</mat-icon>
+          <mat-icon class="!text-blue-600">track_changes</mat-icon>
         </div>
 
         <h3 class="text-lg font-semibold text-gray-800 mb-4">
@@ -181,7 +193,7 @@
       <div class="bg-white rounded-2xl shadow-md p-8 border border-gray-100 hover:shadow-xl transition duration-300">
 
         <div class="w-12 h-12 flex items-center justify-center rounded-full bg-green-50 mb-6">
-          <mat-icon class="text-green-600">settings</mat-icon>
+          <mat-icon class="!text-green-600">settings</mat-icon>
         </div>
 
         <h3 class="text-lg font-semibold text-gray-800 mb-4">
@@ -197,7 +209,7 @@
       <div class="bg-white rounded-2xl shadow-md p-8 border border-gray-100 hover:shadow-xl transition duration-300">
 
         <div class="w-12 h-12 flex items-center justify-center rounded-full bg-purple-50 mb-6">
-          <mat-icon class="text-purple-600">school</mat-icon>
+          <mat-icon class="!text-purple-600">school</mat-icon>
         </div>
 
         <h3 class="text-lg font-semibold text-gray-800 mb-4">
@@ -222,10 +234,12 @@
       The Knowledge-Driven Validation Framework
     </h1>
 
-    <p class="text-lg text-gray-600 mb-16 max-w-3xl mx-auto leading-relaxed">
+    <p class="text-lg text-gray-600 mb-4 max-w-3xl mx-auto leading-relaxed">
       Care2Data transforms fragmented clinical data into structured, governed, and reasoning-enabled intelligence —
       without replacing your existing systems.
-      <br><br>
+    </p>
+
+    <p class="text-gray-600 text-center max-w-3xl mx-auto leading-relaxed mb-8">
       Validation doesn’t need more rules. It needs understanding.
       This is how intelligence becomes operational.
     </p>
@@ -247,7 +261,7 @@
                     transition-all duration-300">
 
           <div class="w-14 h-14 flex items-center justify-center rounded-full bg-blue-50 mb-6">
-            <mat-icon class="text-blue-600">account_tree</mat-icon>
+            <mat-icon class="!text-blue-600">account_tree</mat-icon>
           </div>
 
           <h3 class="text-lg font-semibold text-gray-800 mb-4">
@@ -267,7 +281,7 @@
                     transition-all duration-300">
 
           <div class="w-14 h-14 flex items-center justify-center rounded-full bg-green-50 mb-6">
-            <mat-icon class="text-green-600">hub</mat-icon>
+            <mat-icon class="!text-green-600">hub</mat-icon>
           </div>
 
           <h3 class="text-lg font-semibold text-gray-800 mb-4">
@@ -287,7 +301,7 @@
                     transition-all duration-300">
 
           <div class="w-14 h-14 flex items-center justify-center rounded-full bg-purple-50 mb-6">
-            <mat-icon class="text-purple-600">search</mat-icon>
+            <mat-icon class="!text-purple-600">search</mat-icon>
           </div>
 
           <h3 class="text-lg font-semibold text-gray-800 mb-4">
@@ -307,7 +321,7 @@
                     transition-all duration-300">
 
           <div class="w-14 h-14 flex items-center justify-center rounded-full bg-indigo-50 mb-6">
-            <mat-icon class="text-indigo-600">rule</mat-icon>
+            <mat-icon class="!text-indigo-600">rule</mat-icon>
           </div>
 
           <h3 class="text-lg font-semibold text-gray-800 mb-4">
@@ -327,7 +341,7 @@
                     transition-all duration-300">
 
           <div class="w-14 h-14 flex items-center justify-center rounded-full bg-pink-50 mb-6">
-            <mat-icon class="text-pink-600">school</mat-icon>
+            <mat-icon class="!text-pink-600">school</mat-icon>
           </div>
 
           <h3 class="text-lg font-semibold text-gray-800 mb-4">
@@ -399,7 +413,7 @@
                   hover:-translate-y-2
                   transition-all duration-300">
           <div class="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-blue-50 mb-4">
-            <mat-icon class="text-blue-600">verified</mat-icon>
+            <mat-icon class="!text-blue-600">verified</mat-icon>
           </div>
 
           <h3 class="font-semibold text-gray-800 mb-2">
@@ -418,7 +432,7 @@
                   hover:-translate-y-2
                   transition-all duration-300">
           <div class="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-green-50 mb-4">
-            <mat-icon class="text-green-600">psychology</mat-icon>
+            <mat-icon class="!text-green-600">psychology</mat-icon>
           </div>
 
           <h3 class="font-semibold text-gray-800 mb-2">
@@ -437,7 +451,7 @@
                   hover:-translate-y-2
                   transition-all duration-300">
           <div class="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-purple-50 mb-4">
-            <mat-icon class="text-purple-600">fact_check</mat-icon>
+            <mat-icon class="!text-purple-600">fact_check</mat-icon>
           </div>
 
           <h3 class="font-semibold text-gray-800 mb-2">
@@ -456,7 +470,7 @@
                   hover:-translate-y-2
                   transition-all duration-300">
           <div class="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-indigo-50 mb-4">
-            <mat-icon class="text-indigo-600">integration_instructions</mat-icon>
+            <mat-icon class="!text-indigo-600">integration_instructions</mat-icon>
           </div>
 
           <h3 class="font-semibold text-gray-800 mb-2">
@@ -472,7 +486,7 @@
 
       <!-- CTA INSIDE SAME CARD -->
       <div class="text-center mt-8">
-        <a routerLink="/contact" class="inline-flex items-center gap-3 cursor-pointer
+        <a routerLink="/contact" class="inline-flex items-center gap-3 cursor-pointer text-xs md:text-sm
                  bg-blue-600 px-8 py-3 border
                  rounded-xl text-white font-semibold
                  shadow-md transition-all duration-300
@@ -499,7 +513,7 @@
       Built for Detail-Oriented Clinical Teams
     </h1>
 
-    <p class="text-md text-gray-600 mb-4 max-w-3xl mx-auto leading-relaxed">
+    <p class="text-lg lg:text-xl text-gray-600 mb-4 max-w-3xl mx-auto leading-relaxed">
       For Clinical Teams Who Lead With Knowledge
       <br>
       Where Precision Meets Accountability
@@ -528,7 +542,7 @@
                   hover:-translate-y-2
                   transition-all duration-300">
           <div class="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-blue-50 mb-4">
-            <mat-icon class="text-blue-600">biotech</mat-icon>
+            <mat-icon class="!text-blue-600">biotech</mat-icon>
           </div>
 
           <h3 class="font-semibold text-gray-800 mb-2">
@@ -547,7 +561,7 @@
                   hover:-translate-y-2
                   transition-all duration-300">
           <div class="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-green-50 mb-4">
-            <mat-icon class="text-green-600">handshake</mat-icon>
+            <mat-icon class="!text-green-600">handshake</mat-icon>
           </div>
 
           <h3 class="font-semibold text-gray-800 mb-2">
@@ -566,7 +580,7 @@
                   hover:-translate-y-2
                   transition-all duration-300">
           <div class="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-purple-50 mb-4">
-            <mat-icon class="text-purple-600">analytics</mat-icon>
+            <mat-icon class="!text-purple-600">analytics</mat-icon>
           </div>
 
           <h3 class="font-semibold text-gray-800 mb-2">
@@ -585,7 +599,7 @@
                   hover:-translate-y-2
                   transition-all duration-300">
           <div class="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-indigo-50 mb-4">
-            <mat-icon class="text-indigo-600">rule</mat-icon>
+            <mat-icon class="!text-indigo-600">rule</mat-icon>
           </div>
 
           <h3 class="font-semibold text-gray-800 mb-2">
@@ -612,7 +626,7 @@
       Serious Software for Serious Science
     </h1>
 
-    <p class="text-gray-600 text-center max-w-3xl mx-auto leading-relaxed mb-8">
+    <p class="text-lg lg:text-xl text-gray-600 text-center max-w-3xl mx-auto leading-relaxed mb-8">
       We didn’t build a generic data tool; we built a regulatory tool.
     </p>
 
@@ -695,15 +709,15 @@
 
     <!-- CTA INSIDE SAME CARD -->
     <div class="text-center mt-8">
-      <a routerLink="/contact" class="inline-flex items-center gap-3 cursor-pointer
+      <a routerLink="/contact" class="inline-flex items-center gap-3 cursor-pointer text-xs md:text-sm
                  bg-blue-600 px-8 py-3 border
                  rounded-xl text-white font-semibold
                  shadow-md transition-all duration-300
                  hover:bg-white hover:text-blue-600
                  hover:border hover:border-blue-600">
 
-        Contact
-        <mat-icon class="text-sm">keyboard_arrow_right</mat-icon>
+        Contact Us
+        <!-- <mat-icon class="text-sm">keyboard_arrow_right</mat-icon> -->
       </a>
     </div>
   </div>
@@ -722,7 +736,7 @@
       Clinical decisions demand more than checked boxes.
     </p>
 
-    <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
+    <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed mb-6">
       Care2Data connects your data through knowledge graphs — embedding semantic intelligence
       to transform validation into a submission-ready advantage.
     </p>
@@ -730,10 +744,10 @@
     <!-- CTA Card -->
     <div class="relative mt-12">
 
-      <div class="flex flex-wrap sm:flex-row justify-center gap-6">
+      <div class="flex flex-wrap sm:flex-row justify-center gap-2">
 
         <!-- Primary CTA -->
-        <a routerLink="/contact" class="inline-flex items-center gap-3 cursor-pointer
+        <a routerLink="/contact" class="inline-flex items-center gap-3 cursor-pointer text-xs md:text-sm
                  bg-blue-600 px-8 py-3 border
                  rounded-xl text-white font-semibold
                  shadow-md transition-all duration-300
@@ -745,19 +759,19 @@
         </a>
 
         <!-- Secondary CTA -->
-        <a routerLink="/contact" class="inline-flex items-center gap-3 cursor-pointer
+        <a routerLink="/contact" class="inline-flex items-center gap-3 cursor-pointer text-xs md:text-sm
                  bg-blue-600 px-8 py-3 border
                  rounded-xl text-white font-semibold
                  shadow-md transition-all duration-300
                  hover:bg-white hover:text-blue-600
                  hover:border hover:border-blue-600">
 
-          Contact
-          <mat-icon class="text-sm">keyboard_arrow_right</mat-icon>
+          Contact Us
+          <!-- <mat-icon class="text-sm">keyboard_arrow_right</mat-icon> -->
         </a>
 
         <!-- Tertiary CTA -->
-        <a routerLink="/contact" class="inline-flex items-center gap-3 cursor-pointer
+        <a routerLink="/contact" class="inline-flex items-center gap-3 cursor-pointer text-xs md:text-sm
                  bg-blue-600 px-8 py-3 border
                  rounded-xl text-white font-semibold
                  shadow-md transition-all duration-300
@@ -765,7 +779,7 @@
                  hover:border hover:border-blue-600">
 
           Download Overview
-          <mat-icon class="text-sm">download</mat-icon>
+          <!-- <mat-icon class="text-sm">download</mat-icon> -->
         </a>
 
       </div>

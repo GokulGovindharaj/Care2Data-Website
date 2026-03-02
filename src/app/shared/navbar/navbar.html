@@ -1,20 +1,28 @@
 <nav class="bg-white shadow">
-    <div class="max-w-6xl mx-auto p-4 flex justify-between items-center">
+    <div class="max-w-6xl mx-auto p-3 flex justify-between items-center">
 
         <!-- Logo -->
         <div class="w-40">
             <img src="assets/logo.png" routerLink="/" alt="logo" class="w-full">
         </div>
 
-        <!-- Desktop Menu -->
-        <div class="hidden lg:flex space-x-6">
-            <a routerLink="/" class="font-medium opacity-75 hover:text-blue-600">Home</a>
-            <a routerLink="/about" class="font-medium opacity-75 hover:text-blue-600">About Us</a>
-            <a routerLink="/solutions" class="font-medium opacity-75 hover:text-blue-600">Our Solutions</a>
-            <a routerLink="/product" class="font-medium opacity-75 hover:text-blue-600">Product</a>
-            <a routerLink="/knowledge-services" class="font-medium opacity-75 hover:text-blue-600">Knowledge Services</a>
-            <a routerLink="/resources" class="font-medium opacity-75 hover:text-blue-600">Resources</a>
-            <a routerLink="/contact" class="font-medium opacity-75 hover:text-blue-600">Contact</a>
+        <div class="flex items-center gap-2">
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex space-x-4">
+                <a routerLink="/" class="text-sm font-bold hover:text-blue-600">Home</a>
+                <a routerLink="/about-us" class="text-sm font-bold hover:text-blue-600">About Us</a>
+                <a routerLink="/" class="text-sm font-bold hover:text-blue-600">Our Solutions</a>
+                <a routerLink="/product" class="text-sm font-bold hover:text-blue-600">Product</a>
+                <a routerLink="/knowledge-services" class="text-sm font-bold hover:text-blue-600">Knowledge Services</a>
+                <a routerLink="/" class="text-sm font-bold hover:text-blue-600">Resources</a>
+                <a routerLink="/contact-us" class="text-sm font-bold hover:text-blue-600">Contact Us</a>
+            </div>
+            <!-- CTA -->
+            <a routerLink="/contact"
+                class="hidden lg:flex items-center text-xs xl:text-sm gap-2 bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 w-fit">
+                Request a Demo
+                <mat-icon class="text-sm">keyboard_arrow_right</mat-icon>
+            </a>
         </div>
 
         <!-- Mobile Button -->
@@ -31,12 +39,12 @@
         [ngClass]="isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'">
         <div class="flex flex-col px-6 pb-4 space-y-4 bg-white shadow">
             <a routerLink="/" (click)="closeMenu()" class="mobile-link">Home</a>
-            <a routerLink="/about" (click)="closeMenu()" class="mobile-link">About Us</a>
-            <a routerLink="/solutions" (click)="closeMenu()" class="mobile-link">Our Solutions</a>
+            <a routerLink="/about-us" (click)="closeMenu()" class="mobile-link">About Us</a>
+            <a routerLink="/" (click)="closeMenu()" class="mobile-link">Our Solutions</a>
             <a routerLink="/product" (click)="closeMenu()" class="mobile-link">Product</a>
             <a routerLink="/knowledge-services" (click)="closeMenu()" class="mobile-link">Knowledge Services</a>
-            <a routerLink="/resources" (click)="closeMenu()" class="mobile-link">Resources</a>
-            <a routerLink="/contact" (click)="closeMenu()" class="mobile-link">Contact</a>
+            <a routerLink="/" (click)="closeMenu()" class="mobile-link">Resources</a>
+            <a routerLink="/contact-us" (click)="closeMenu()" class="mobile-link">Contact Us</a>
         </div>
     </div>
 </nav>
