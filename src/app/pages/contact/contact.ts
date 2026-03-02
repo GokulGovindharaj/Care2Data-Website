@@ -1,21 +1,28 @@
 import { CommonModule } from '@angular/common';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { Meta, Title } from '@angular/platform-browser';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contact',
-  imports: [MatFormFieldModule, MatSelectModule, MatInputModule, FormsModule, CommonModule, ReactiveFormsModule],
+  imports: [MatFormFieldModule, MatSelectModule, MatInputModule, FormsModule,
+    CommonModule, ReactiveFormsModule, HttpClientModule, MatButtonModule],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })
 export class Contact {
   contactForm!: FormGroup;
   submitted = false;
-  constructor(private fb: FormBuilder, private titleService: Title, private metaService: Meta) { }
+  isLoading = false;
+  constructor(private fb: FormBuilder, private titleService: Title, private metaService: Meta,
+    private http: HttpClient, private toastr: ToastrService
+  ) { }
 
   ngOnInit() {
 
@@ -83,8 +90,37 @@ export class Contact {
 
   onSubmit() {
     this.submitted = true;
+    this.isLoading = true;
     if (this.contactForm.valid) {
-      console.log(this.contactForm.value);
+      const formData = {
+        'Name': this.contactForm.value.name,
+        'Email ID': this.contactForm.value.email,
+        'Organization Name': this.contactForm.value.organization,
+        'Area of Interest': this.contactForm.value.interest,
+        'Message': this.contactForm.value.message,
+        _captcha: "false",
+        _subject: "New Contact Form Message - Care2Data"
+      };
+
+      this.http.post(
+        'https://formsubmit.co/ajax/gokul.govindharaj@care2data.com',
+        formData,
+        { headers: { 'Content-Type': 'application/json' } }
+      ).subscribe({
+        next: () => {
+          this.toastr.success('Message sent successfully!');
+          this.contactForm.reset();
+          this.isLoading = false;
+        },
+        error: (err) => {
+
+          this.toastr.error('Something went wrong!');
+          this.isLoading = false;
+        }
+      });
+    } else {
+      this.toastr.error('Please fill out the form correctly before submitting.');
+      this.isLoading = false;
     }
   }
 }

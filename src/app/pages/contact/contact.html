@@ -70,10 +70,9 @@
           <p class="mb-2 font-medium">Area of Interest</p>
           <mat-form-field appearance="outline" class="w-full">
             <mat-select formControlName="interest">
-              <mat-option value="validation">Clinical Validation</mat-option>
-              <mat-option value="ontology">Ontology Modeling</mat-option>
-              <mat-option value="knowledge">Knowledge Systems</mat-option>
-              <mat-option value="consulting">Regulatory Consulting</mat-option>
+              <mat-option value="About KWALIFY">About KWALIFY</mat-option>
+              <mat-option value="Partnerships">Partnerships</mat-option>
+              <mat-option value="Request for Demo">Request for Demo</mat-option>
             </mat-select>
           </mat-form-field>
           <p class="text-red-500 text-sm mt-1"
@@ -101,9 +100,9 @@
         </div>
 
         <!-- Submit Button -->
-        <button type="submit"
-          class="w-full bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900">
-          Send Message
+        <button mat-flat-button class="my-1 bg-primary rounded-md w-full" type="submit" [disabled]="isLoading">
+          <p class="m-0" *ngIf="!isLoading">Send Message</p>
+          <p class="m-0 text-white" *ngIf="isLoading">Sending Message...</p>
         </button>
 
       </form>
@@ -117,8 +116,8 @@
           Prefer to email us directly?
         </h2>
 
-        <a href="mailto:contact@care2data.com" class="text-blue-600 font-medium hover:underline">
-          contact@care2data.com
+        <a href="mailto:admin@care2data.com" class="text-blue-600 font-medium hover:underline">
+          admin@care2data.com
         </a>
 
       </div>

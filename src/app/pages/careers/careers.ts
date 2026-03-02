@@ -22,6 +22,6 @@ export class Careers implements OnInit {
   ngOnInit() { }
 
   applyJobs(job: any) {
-    console.log(job);
+
   }
 }
