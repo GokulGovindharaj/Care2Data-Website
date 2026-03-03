@@ -1,50 +1,51 @@
-<nav class="bg-white shadow">
-    <div class="max-w-6xl mx-auto p-3 flex justify-between items-center">
+<nav class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-xl border-b border-gray-200/50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
 
         <!-- Logo -->
-        <div class="w-40">
-            <img src="assets/logo.png" routerLink="/" alt="logo" class="w-full">
+        <div class="flex-shrink-0 w-32 sm:w-40">
+            <img src="assets/logo.png" routerLink="/" alt="logo" class="w-full h-auto">
         </div>
 
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 md:gap-6">
             <!-- Desktop Menu -->
-            <div class="hidden lg:flex space-x-4">
-                <a routerLink="/" class="text-sm font-bold hover:text-blue-600">Home</a>
-                <a routerLink="/about-us" class="text-sm font-bold hover:text-blue-600">About Us</a>
-                <a routerLink="/" class="text-sm font-bold hover:text-blue-600">Our Solutions</a>
-                <a routerLink="/product" class="text-sm font-bold hover:text-blue-600">Product</a>
-                <a routerLink="/knowledge-services" class="text-sm font-bold hover:text-blue-600">Knowledge Services</a>
-                <a routerLink="/" class="text-sm font-bold hover:text-blue-600">Resources</a>
-                <a routerLink="/contact-us" class="text-sm font-bold hover:text-blue-600">Contact Us</a>
+            <div class="hidden lg:flex items-center space-x-1">
+                <a routerLink="/" class="text-xs xl:text-sm text-gray-700 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-all duration-300 ease-in-out">Home</a>
+                <a routerLink="/about-us" class="text-xs xl:text-sm text-gray-700 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-all duration-300 ease-in-out">About Us</a>
+                <a routerLink="/" class="text-xs xl:text-sm text-gray-700 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-all duration-300 ease-in-out">Our Solutions</a>
+                <a routerLink="/product" class="text-xs xl:text-sm text-gray-700 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-all duration-300 ease-in-out">Product</a>
+                <a routerLink="/knowledge-services" class="text-xs xl:text-sm text-gray-700 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-all duration-300 ease-in-out">Knowledge Services</a>
+                <a routerLink="/" class="text-xs xl:text-sm text-gray-700 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-all duration-300 ease-in-out">Resources</a>
+                <a routerLink="/contact-us" class="text-xs xl:text-sm text-gray-700 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-all duration-300 ease-in-out">Contact Us</a>
             </div>
             <!-- CTA -->
             <a routerLink="/contact"
-                class="hidden lg:flex items-center text-xs xl:text-sm gap-2 bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 w-fit">
+                class="hidden lg:inline-flex items-center justify-center gap-2 text-xs xl:text-sm font-semibold px-4 xl:px-6 py-2.5 xl:py-3 bg-blue-600 text-white rounded-lg border-2 border-blue-600 hover:bg-white hover:text-blue-600 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 whitespace-nowrap cursor-pointer">
                 Request a Demo
                 <mat-icon class="text-sm">keyboard_arrow_right</mat-icon>
             </a>
         </div>
 
         <!-- Mobile Button -->
-        <div class="lg:hidden">
-            <button mat-icon-button (click)="toggleMenu()">
-                <mat-icon>{{!isMenuOpen ? 'menu':'close'}}</mat-icon>
+        <div class="lg:hidden flex-shrink-0">
+            <button mat-icon-button (click)="toggleMenu()" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">
+                <mat-icon class="text-2xl">{{!isMenuOpen ? 'menu':'close'}}</mat-icon>
             </button>
         </div>
 
     </div>
 
     <!-- Animated Mobile Menu -->
-    <div class="absolute left-0 w-full bg-white shadow-lg z-50 lg:hidden transition-all duration-700"
+    <div class="absolute left-0 w-full bg-white shadow-lg z-50 lg:hidden transition-all duration-500 ease-in-out"
         [ngClass]="isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'">
-        <div class="flex flex-col px-6 pb-4 space-y-4 bg-white shadow">
-            <a routerLink="/" (click)="closeMenu()" class="mobile-link">Home</a>
-            <a routerLink="/about-us" (click)="closeMenu()" class="mobile-link">About Us</a>
-            <a routerLink="/" (click)="closeMenu()" class="mobile-link">Our Solutions</a>
-            <a routerLink="/product" (click)="closeMenu()" class="mobile-link">Product</a>
-            <a routerLink="/knowledge-services" (click)="closeMenu()" class="mobile-link">Knowledge Services</a>
-            <a routerLink="/" (click)="closeMenu()" class="mobile-link">Resources</a>
-            <a routerLink="/contact-us" (click)="closeMenu()" class="mobile-link">Contact Us</a>
+        <div class="flex h-screen flex-col px-4 sm:px-6 py-4 space-y-1 bg-white border-t border-gray-200/50">
+            <a routerLink="/" (click)="closeMenu()" class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 ease-in-out block">Home</a>
+            <a routerLink="/about-us" (click)="closeMenu()" class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 ease-in-out block">About Us</a>
+            <a routerLink="/" (click)="closeMenu()" class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 ease-in-out block">Our Solutions</a>
+            <a routerLink="/product" (click)="closeMenu()" class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 ease-in-out block">Product</a>
+            <a routerLink="/knowledge-services" (click)="closeMenu()" class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 ease-in-out block">Knowledge Services</a>
+            <a routerLink="/" (click)="closeMenu()" class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 ease-in-out block">Resources</a>
+            <a routerLink="/contact-us" (click)="closeMenu()" class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 ease-in-out block">Contact Us</a>
+            <a routerLink="/contact" (click)="closeMenu()" class="text-sm sm:text-base text-white font-semibold px-4 py-3 mt-2 rounded-lg bg-blue-600 hover:bg-blue-700 transition-all duration-300 ease-in-out block text-center">Request a Demo</a>
         </div>
     </div>
 </nav>
