@@ -100,7 +100,7 @@
         </div>
 
         <!-- Submit Button -->
-        <button mat-flat-button class="my-1 bg-primary rounded-md w-full" type="submit" [disabled]="isLoading">
+        <button  class="my-1 text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 rounded-md w-full" type="submit" [disabled]="isLoading">
           <p class="m-0" *ngIf="!isLoading">Send Message</p>
           <p class="m-0 text-white" *ngIf="isLoading">Sending Message...</p>
         </button>
