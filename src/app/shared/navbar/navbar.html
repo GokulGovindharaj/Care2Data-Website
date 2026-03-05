@@ -1,51 +1,124 @@
-<nav class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-xl border-b border-gray-200/50 shadow-sm">
+<nav
+    class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl border-b transition-colors duration-300 bg-black/30 text-white border-white/10 shadow-lg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
 
         <!-- Logo -->
         <div class="flex-shrink-0 w-32 sm:w-40">
-            <img src="assets/logo.png" routerLink="/" alt="logo" class="w-full h-auto">
+            <img src="assets/logo.png" routerLink="/" alt="logo" class="w-full h-auto cursor-pointer">
         </div>
 
         <div class="flex items-center gap-2 md:gap-6">
+
             <!-- Desktop Menu -->
             <div class="hidden lg:flex items-center space-x-1">
-                <a routerLink="/" class="text-xs xl:text-sm text-gray-700 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-all duration-300 ease-in-out">Home</a>
-                <a routerLink="/about-us" class="text-xs xl:text-sm text-gray-700 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-all duration-300 ease-in-out">About Us</a>
-                <a routerLink="/" class="text-xs xl:text-sm text-gray-700 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-all duration-300 ease-in-out">Our Solutions</a>
-                <a routerLink="/product" class="text-xs xl:text-sm text-gray-700 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-all duration-300 ease-in-out">Product</a>
-                <a routerLink="/knowledge-services" class="text-xs xl:text-sm text-gray-700 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-all duration-300 ease-in-out">Knowledge Services</a>
-                <a routerLink="/" class="text-xs xl:text-sm text-gray-700 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-all duration-300 ease-in-out">Resources</a>
-                <a routerLink="/contact-us" class="text-xs xl:text-sm text-gray-700 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-gray-100 hover:text-blue-600 transition-all duration-300 ease-in-out">Contact Us</a>
+
+                <a routerLink="/"
+                    class="text-xs xl:text-sm text-white/90 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 hover:text-blue-400 transition-all duration-300">
+                    Home
+                </a>
+
+                <a routerLink="/about-us"
+                    class="text-xs xl:text-sm text-white/90 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 hover:text-blue-400 transition-all duration-300">
+                    About Us
+                </a>
+
+                <a routerLink="/"
+                    class="text-xs xl:text-sm text-white/90 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 hover:text-blue-400 transition-all duration-300">
+                    Our Solutions
+                </a>
+
+                <a routerLink="/product"
+                    class="text-xs xl:text-sm text-white/90 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 hover:text-blue-400 transition-all duration-300">
+                    Product
+                </a>
+
+                <a routerLink="/knowledge-services"
+                    class="text-xs xl:text-sm text-white/90 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 hover:text-blue-400 transition-all duration-300">
+                    Knowledge Services
+                </a>
+
+                <a routerLink="/"
+                    class="text-xs xl:text-sm text-white/90 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 hover:text-blue-400 transition-all duration-300">
+                    Resources
+                </a>
+
+                <a routerLink="/contact-us"
+                    class="text-xs xl:text-sm text-white/90 font-semibold px-2 xl:px-3 py-2 rounded-lg hover:bg-white/10 hover:text-blue-400 transition-all duration-300">
+                    Contact Us
+                </a>
+
             </div>
+
             <!-- CTA -->
-            <a routerLink="/contact"
-                class="hidden lg:inline-flex items-center justify-center gap-2 text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 cursor-pointer">
-                Request a Demo
-                <mat-icon class="text-sm">keyboard_arrow_right</mat-icon>
-            </a>
+            <button routerLink="/contact-us"
+                class="hidden lg:inline-flex  items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+                style="background-color: var(--bg-primary); color: white;"
+                onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+                onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+                Request a Demo →
+            </button>
+
         </div>
 
         <!-- Mobile Button -->
         <div class="lg:hidden flex-shrink-0">
-            <button mat-icon-button (click)="toggleMenu()" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">
+            <button mat-icon-button (click)="toggleMenu()"
+                class="text-white hover:text-blue-400 transition-colors duration-300">
                 <mat-icon class="text-2xl">{{!isMenuOpen ? 'menu':'close'}}</mat-icon>
             </button>
         </div>
 
     </div>
 
-    <!-- Animated Mobile Menu -->
+    <!-- Mobile Menu -->
     <div class="absolute left-0 w-full bg-white shadow-lg z-50 lg:hidden transition-all duration-500 ease-in-out"
-        [ngClass]="isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'">
-        <div class="flex h-screen flex-col px-4 sm:px-6 py-4 space-y-1 bg-white border-t border-gray-200/50">
-            <a routerLink="/" (click)="closeMenu()" class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 ease-in-out block">Home</a>
-            <a routerLink="/about-us" (click)="closeMenu()" class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 ease-in-out block">About Us</a>
-            <a routerLink="/" (click)="closeMenu()" class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 ease-in-out block">Our Solutions</a>
-            <a routerLink="/product" (click)="closeMenu()" class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 ease-in-out block">Product</a>
-            <a routerLink="/knowledge-services" (click)="closeMenu()" class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 ease-in-out block">Knowledge Services</a>
-            <a routerLink="/" (click)="closeMenu()" class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 ease-in-out block">Resources</a>
-            <a routerLink="/contact-us" (click)="closeMenu()" class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 ease-in-out block">Contact Us</a>
-            <a routerLink="/contact" (click)="closeMenu()" class="text-sm sm:text-base text-white font-semibold px-4 py-3 mt-2 rounded-lg bg-blue-600 hover:bg-blue-700 transition-all duration-300 ease-in-out block text-center">Request a Demo</a>
+        [ngClass]="isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'">
+
+        <div class="flex flex-col px-4 sm:px-6 py-4 space-y-1 bg-white border-t border-gray-200">
+
+            <a routerLink="/" (click)="closeMenu()"
+                class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition">
+                Home
+            </a>
+
+            <a routerLink="/about-us" (click)="closeMenu()"
+                class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition">
+                About Us
+            </a>
+
+            <a routerLink="/" (click)="closeMenu()"
+                class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition">
+                Our Solutions
+            </a>
+
+            <a routerLink="/product" (click)="closeMenu()"
+                class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition">
+                Product
+            </a>
+
+            <a routerLink="/knowledge-services" (click)="closeMenu()"
+                class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition">
+                Knowledge Services
+            </a>
+
+            <a routerLink="/" (click)="closeMenu()"
+                class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition">
+                Resources
+            </a>
+
+            <a routerLink="/contact-us" (click)="closeMenu()"
+                class="text-sm sm:text-base text-gray-700 font-semibold px-4 py-3 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition">
+                Contact Us
+            </a>
+
+            <button routerLink="/contact-us" (click)="closeMenu()"
+                class="items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+                style="background-color: var(--bg-primary); color: white;"
+                onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+                onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+                Request a Demo →
+            </button>
+
         </div>
     </div>
 </nav>

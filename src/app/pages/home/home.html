@@ -1,63 +1,74 @@
 <!-- Hero Section -->
-<section class="min-h-screen flex items-center bg-white py-12 md:py-20">
+<section class="min-h-screen py-20 flex items-center bg-[#0d1117]">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center w-full gap-8 lg:gap-12">
 
     <!-- Left Content -->
     <div class="w-full lg:w-1/2 text-left">
 
       <!-- Headline -->
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6 text-gray-900">
-        Where Clinical Data Validation
-        <span class="block text-blue-600 mt-2">Becomes Intelligent</span>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight my-6 text-primary font-heading">
+        Where Clinical Data Validation Becomes
+        <i class="block text-secondary mt-2"> Intelligent</i>
       </h1>
 
       <!-- Subtext -->
-      <p class="text-base sm:text-lg lg:text-xl text-gray-700 mb-8 leading-relaxed max-w-xl">
+      <p class="text-base sm:text-lg lg:text-xl text-gray-400 mb-8 leading-relaxed max-w-xl">
         Care2Data applies semantic intelligence and reasoning over a linked clinical data model —
         moving beyond pass/fail checks to identify root causes, explain impact, and guide what to fix before submission.
       </p>
 
       <!-- Tagline -->
-      <p class="text-xs sm:text-sm uppercase tracking-wider text-gray-500 mb-10 font-medium">
+      <p class="text-xs sm:text-sm uppercase tracking-wider mb-10 font-medium text-secondary">
         Accuracy • Consistency • Scalability
       </p>
 
       <!-- CTA -->
-      <a routerLink="/contact"
-        class="inline-flex items-center justify-center gap-2 text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 cursor-pointer">
-        Request a Demo
-        <mat-icon class="text-base">keyboard_arrow_right</mat-icon>
-      </a>
+      <div class="flex flex-col sm:flex-row gap-4 justify-start pt-4">
+        <button type="submit"
+          class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+          style="background-color: var(--bg-primary); color: white;"
+          onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+          onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+          See How It Works →
+        </button>
+        <button type="submit"
+          class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer border-2"
+          style="background-color: var(--bg-secondary); color: #000; border-color: var(--bg-secondary);"
+          onmouseover="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white'; this.style.borderColor='var(--bg-primary)';"
+          onmouseout="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000'; this.style.borderColor='var(--bg-secondary)';">
+          Talk to Our Team
+        </button>
+      </div>
 
     </div>
 
     <!-- Right Image -->
     <div class="w-full lg:w-1/2 flex justify-center mt-10 lg:mt-0">
-      <!-- <img src="assets/logo.png" routerLink="/" alt="logo" class="w-64 lg:w-96 object-contain"> -->
+      <img src="images/home.png" routerLink="/" alt="logo" class="w-64 lg:w-96 object-contain">
     </div>
 
   </div>
 </section>
 
 <!-- The Core Value -->
-<section class="py-10 py-md-20 bg-gradient-to-b from-gray-50 to-white">
+<section class="py-8 md:py-6 bg-gray-900">
   <div class="max-w-5xl mx-auto px-6">
 
     <!-- Heading -->
-    <h1 class="text-2xl lg:text-4xl font-bold text-center mb-6">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-heading text-left md:text-center font-bold mb-8 text-primary">
       Where Validation Becomes Intelligence
     </h1>
 
-    <p class="text-lg lg:text-xl text-gray-500 mb-6 text-center leading-relaxed">
+    <p class="text-lg lg:text-xl text-gray-300 mb-6 text-left md:text-center leading-relaxed ">
       Clinical trials aren’t failing because of too much data. <br>
       They’re failing because validation still relies on rules that don’t understand it.
     </p>
 
-    <p class="text-lg font-semibold text-center py-3 border-y border-gray-200 mb-6">
-      Flags don’t solve problems. Intelligence does.
+    <p class="text-lg text-secondary font-semibold text-left md:text-center py-3 border-y border-gray-800 mb-6">
+      Flags don't solve problems. Intelligence does.
     </p>
 
-    <p class="text-gray-600 text-center max-w-3xl mx-auto leading-relaxed mb-8">
+    <p class="text-gray-400 text-left md:text-center max-w-3xl mx-auto leading-relaxed mb-8">
       Validation stops being a checklist. <br>
       It becomes reasoning.
     </p>
@@ -65,12 +76,12 @@
     <!-- Cards -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-      <div class="bg-white rounded-2xl shadow-md p-8 border border-gray-100 hover:shadow-xl transition duration-300">
-        <h3 class="text-lg font-semibold text-gray-800 mb-6">
+      <div class="bg-gray-800 rounded-2xl shadow-md p-8 border border-gray-700 hover:shadow-xl transition duration-300">
+        <h3 class="text-lg font-semibold text-white mb-6">
           Most systems
         </h3>
 
-        <ul class="space-y-4 text-gray-600">
+        <ul class="space-y-4 text-gray-300">
           <li class="flex items-start gap-3">
             <span class="text-red-500 font-bold">✖</span>
             Execute static scripts
@@ -90,12 +101,12 @@
         </ul>
       </div>
 
-      <div class="bg-white rounded-2xl shadow-md p-8 border border-gray-100 hover:shadow-xl transition duration-300">
-        <h3 class="text-lg font-semibold text-gray-800 mb-6">
+      <div class="bg-gray-800 rounded-2xl shadow-md p-8 border border-gray-700 hover:shadow-xl transition duration-300">
+        <h3 class="text-lg font-semibold text-white mb-6">
           Care2Data Intelligence
         </h3>
 
-        <ul class="space-y-4 text-gray-600">
+        <ul class="space-y-4 text-gray-300">
           <li class="flex items-start gap-3">
             <span class="text-green-500 font-bold">✔</span>
             Reason across datasets, not just within them
@@ -119,392 +130,426 @@
 
     <!-- Outcome Section -->
     <div class="mt-10 md-10">
-      <h2 class="text-2xl lg:text-2xl font-bold mb-6 text-center">
+      <h2 class="text-2xl lg:text-2xl text-secondary font-bold mb-6 text-center">
         The Outcome
       </h2>
 
-      <p class="text-md text-gray-500 mb-6 text-left">
+      <p class="text-md text-gray-300 mb-6 text-left">
         Submission-ready, defensible clinical data
       </p>
 
-      <ul class="space-y-2 text-gray-600 text-left">
+      <ul class="space-y-2 text-gray-300 text-left">
         <li>— without rework</li>
         <li>— without last-minute fire drills</li>
         <li>— without replacing the systems your team already trusts</li>
       </ul>
 
-      <hr class="max-w-sm mx-auto my-8 border-gray-200">
+      <hr class="max-w-sm mx-auto my-8 border-gray-800">
 
-      <p class="text-md text-gray-500 text-center">
+      <p class="text-md text-gray-300 text-left md:text-center">
         This isn’t an upgrade. It’s a reset. <br>
         From binary checking to knowledge-driven assurance.
       </p>
     </div>
     <!-- CTA INSIDE SAME CARD -->
-    <div class="text-center mt-8">
-      <a routerLink="/contact"
-        class="inline-flex items-center justify-center gap-2 text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 cursor-pointer">
-        Learn More
-        <mat-icon class="text-base">keyboard_arrow_right</mat-icon>
-      </a>
+    <div class="text-left md:text-center mt-8">
+      <button
+        class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+        style="background-color: var(--bg-primary); color: white;"
+        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+        onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+        Learn More About Our Approach →
+      </button>
     </div>
   </div>
 </section>
 
 <!-- Services -->
-<section class="py-16 md:py-24 bg-gradient-to-b from-slate-50 to-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<section class="py-8 md:py-6 bg-[#0d1117] shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
 
     <!-- Heading -->
-    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-gray-900">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold mb-8 text-secondary">
       Built to Work Alongside Your Team
     </h2>
 
-    <p class="text-base sm:text-lg lg:text-xl text-gray-700 mb-6 max-w-3xl mx-auto leading-relaxed">
+    <p class="text-base sm:text-lg lg:text-xl text-gray-300 mb-6 max-w-3xl leading-relaxed">
       Care2Data partners with sponsors to embed semantic intelligence into clinical operations —
       without disrupting existing systems.
     </p>
 
     <!-- Cards -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-left">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-left my-6">
 
       <!-- Strategic Alignment -->
       <div
-        class="bg-white rounded-2xl shadow-md hover:shadow-xl p-6 md:p-8 border border-gray-200 transition-all duration-300">
+        class="bg-gray-800 rounded-2xl shadow-md hover:shadow-xl p-6 md:p-8 border border-gray-700 transition-all duration-300">
 
-        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-50 mb-6">
-          <mat-icon class="!text-blue-600 text-2xl">track_changes</mat-icon>
+        <div class="w-12 h-12 flex items-center justify-center rounded-full mb-6"
+          style="background-color: rgba(65, 122, 227, 0.1);">
+          <mat-icon class="text-2xl" style="color: var(--bg-primary);">track_changes</mat-icon>
         </div>
 
-        <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-4">
+        <h3 class="text-lg md:text-xl font-bold text-white mb-4">
           Strategic Alignment
         </h3>
 
-        <p class="text-gray-700 text-base">
+        <p class="text-gray-300 text-base">
           Define high-impact knowledge use cases tied to regulatory defensibility.
         </p>
       </div>
 
       <!-- Deployment -->
       <div
-        class="bg-white rounded-2xl shadow-md hover:shadow-xl p-6 md:p-8 border border-gray-200 transition-all duration-300">
+        class="bg-gray-800 rounded-2xl shadow-md hover:shadow-xl p-6 md:p-8 border border-gray-700 transition-all duration-300">
 
-        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-green-50 mb-6">
-          <mat-icon class="!text-green-600 text-2xl">settings</mat-icon>
+        <div class="w-12 h-12 flex items-center justify-center rounded-full mb-6"
+          style="background-color: rgba(34, 197, 94, 0.1);">
+          <mat-icon class="text-2xl" style="color: #22c55e;">settings</mat-icon>
         </div>
 
-        <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-4">
+        <h3 class="text-lg md:text-xl font-bold text-white mb-4">
           Deployment
         </h3>
 
-        <p class="text-gray-700 text-base">
+        <p class="text-gray-300 text-base">
           Embed knowledge models and reasoning into your existing ecosystem.
         </p>
       </div>
 
       <!-- Enablement -->
       <div
-        class="bg-white rounded-2xl shadow-md hover:shadow-xl p-6 md:p-8 border border-gray-200 transition-all duration-300">
+        class="bg-gray-800 rounded-2xl shadow-md hover:shadow-xl p-6 md:p-8 border border-gray-700 transition-all duration-300">
 
-        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-purple-50 mb-6">
-          <mat-icon class="!text-purple-600 text-2xl">school</mat-icon>
+        <div class="w-12 h-12 flex items-center justify-center rounded-full mb-6"
+          style="background-color: rgba(168, 85, 247, 0.1);">
+          <mat-icon class="text-2xl" style="color: #a855f7;">school</mat-icon>
         </div>
 
-        <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-4">
+        <h3 class="text-lg md:text-xl font-bold text-white mb-4">
           Enablement
         </h3>
 
-        <p class="text-gray-700 text-base">
+        <p class="text-gray-300 text-base">
           Equip teams to sustain and scale intelligence independently.
         </p>
       </div>
 
     </div>
+
+    <!-- CTA -->
+    <button
+      class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+      style="background-color: var(--bg-primary); color: white;"
+      onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+      onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+      Explore Engagement Models →
+    </button>
   </div>
 </section>
 
 <!-- Solutions -->
-<section class="py-12 bg-gradient-to-b from-gray-50 to-white relative">
-  <!-- Soft Glow Background -->
-  <div class="absolute inset-0 bg-blue-100 opacity-20 blur-3xl rounded-3xl"></div>
+<section class="py-8 md:py-6 bg-[#12203a] relative">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Heading -->
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold mb-8 text-secondary">
+      The Knowledge-Driven Validation Framework
+    </h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-  <div class="max-w-7xl mx-auto px-6 text-center grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+      <div class="text-justify">
 
-    <div class="text-justify">
-      <!-- Heading -->
-      <h1 class="text-2xl text-center lg:text-4xl font-bold mb-6">
-        The Knowledge-Driven Validation Framework
-      </h1>
+        <p class="text-lg text-gray-300 mb-4 max-w-3xl mx-auto leading-relaxed">
+          Care2Data transforms fragmented clinical data into structured, governed, and reasoning-enabled intelligence —
+          without replacing your existing systems. </p>
+        <p class="text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
+          Validation doesn’t need more rules. It needs understanding.
+          This is how intelligence becomes operational.
+        </p>
 
-      <p class="text-lg text-gray-600 mb-4 max-w-3xl mx-auto leading-relaxed">
-        Care2Data transforms fragmented clinical data into structured, governed, and reasoning-enabled intelligence —
-        without replacing your existing systems. </p>
-      <p class="text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
-        Validation doesn’t need more rules. It needs understanding.
-        This is how intelligence becomes operational.
-      </p>
-    </div>
-
-    <!-- Cards Wrapper -->
-    <div class="relative">
-
-      <!-- Soft Glow Background -->
-      <div class="absolute inset-0 bg-blue-100 opacity-10 blur-3xl rounded-3xl"></div>
-
-      <!-- Cards Grid -->
-      <div class="relative flex flex-col gap-4 text-left">
-
-        <!-- Knowledge Modeling -->
-        <div class="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-5
-                      border border-gray-200
-                      shadow-md hover:shadow-lg
-                      hover:-translate-y-1
-                      transition-all duration-300">
-
-          <div class="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-lg bg-blue-50">
-            <mat-icon class="!text-blue-600 text-2xl">account_tree</mat-icon>
-          </div>
-
-          <div>
-            <h3 class="text-base md:text-lg font-bold text-gray-900">
-              Knowledge Modeling
-            </h3>
-
-            <p class="text-sm text-gray-700 leading-relaxed">
-              We encode study logic and regulatory intent into structured semantic models.
-            </p>
-          </div>
-        </div>
-
-        <!-- Knowledge Repository -->
-        <div class="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-5
-                      border border-gray-200
-                      shadow-md hover:shadow-lg
-                      hover:-translate-y-1
-                      transition-all duration-300">
-
-          <div class="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-lg bg-green-50">
-            <mat-icon class="!text-green-600 text-2xl">hub</mat-icon>
-          </div>
-
-          <div>
-            <h3 class="text-base md:text-lg font-bold text-gray-900">
-              Knowledge Repository
-            </h3>
-
-            <p class="text-sm text-gray-700 leading-relaxed">
-              We deploy governed knowledge graph repositories as a unified source of truth.
-            </p>
-          </div>
-        </div>
-
-        <!-- Knowledge Discovery -->
-        <div class="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-5
-                      border border-gray-200
-                      shadow-md hover:shadow-lg
-                      hover:-translate-y-1
-                      transition-all duration-300">
-
-          <div class="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-lg bg-purple-50">
-            <mat-icon class="!text-purple-600 text-2xl">search</mat-icon>
-          </div>
-
-          <div>
-            <h3 class="text-base md:text-lg font-bold text-gray-900">
-              Knowledge Discovery
-            </h3>
-
-            <p class="text-sm text-gray-700 leading-relaxed">
-              We activate reasoning to uncover inconsistencies and hidden risk.
-            </p>
-          </div>
-        </div>
-
-        <!-- Knowledge Management -->
-        <div class="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-5
-                      border border-gray-200
-                      shadow-md hover:shadow-lg
-                      hover:-translate-y-1
-                      transition-all duration-300">
-
-          <div class="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-lg bg-indigo-50">
-            <mat-icon class="!text-indigo-600 text-2xl">rule</mat-icon>
-          </div>
-
-          <div>
-            <h3 class="text-base md:text-lg font-bold text-gray-900">
-              Knowledge Management
-            </h3>
-
-            <p class="text-sm text-gray-700 leading-relaxed">
-              We ensure continuous model governance and regulatory alignment.
-            </p>
-          </div>
-        </div>
-
-        <!-- Training & Enablement -->
-        <div class="bg-white rounded-xl md:rounded-2xl p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-5
-                      border border-gray-200
-                      shadow-md hover:shadow-lg
-                      hover:-translate-y-1
-                      transition-all duration-300">
-
-          <div class="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-lg bg-pink-50">
-            <mat-icon class="!text-pink-600 text-2xl">school</mat-icon>
-          </div>
-
-          <div>
-            <h3 class="text-base md:text-lg font-bold text-gray-900">
-              Training & Enablement
-            </h3>
-
-            <p class="text-sm text-gray-700 leading-relaxed">
-              We enable teams to sustain and scale intelligence independently.
-            </p>
-          </div>
-        </div>
-
+        <!-- CTA -->
+        <button
+          class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+          style="background-color: var(--bg-primary); color: white;"
+          onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+          onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+          Explore Knowledge Services →
+        </button>
       </div>
+
+      <!-- Cards Wrapper -->
+      <div class="relative">
+
+        <!-- Soft Glow Background -->
+        <div class="absolute inset-0 bg-blue-100 opacity-10 blur-3xl rounded-3xl"></div>
+
+        <!-- Cards Grid -->
+        <div class="relative flex flex-col gap-4 text-left">
+
+          <!-- Knowledge Modeling -->
+          <div class="bg-gray-800 rounded-xl md:rounded-2xl p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-5
+                      border border-gray-700
+                      shadow-md hover:shadow-lg
+                      hover:-translate-y-1
+                      transition-all duration-300">
+
+            <div class="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-lg"
+              style="background-color: rgba(65, 122, 227, 0.1);">
+              <mat-icon class="text-2xl" style="color: var(--bg-primary);">account_tree</mat-icon>
+            </div>
+
+            <div>
+              <h3 class="text-base md:text-lg font-bold text-white">
+                Knowledge Modeling
+              </h3>
+
+              <p class="text-sm text-gray-300 leading-relaxed">
+                We encode study logic and regulatory intent into structured semantic models.
+              </p>
+            </div>
+          </div>
+
+          <!-- Knowledge Repository -->
+          <div class="bg-gray-800 rounded-xl md:rounded-2xl p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-5
+                      border border-gray-700
+                      shadow-md hover:shadow-lg
+                      hover:-translate-y-1
+                      transition-all duration-300">
+
+            <div class="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-lg"
+              style="background-color: rgba(34, 197, 94, 0.1);">
+              <mat-icon class="text-2xl" style="color: #22c55e;">hub</mat-icon>
+            </div>
+
+            <div>
+              <h3 class="text-base md:text-lg font-bold text-white">
+                Knowledge Repository
+              </h3>
+
+              <p class="text-sm text-gray-300 leading-relaxed">
+                We deploy governed knowledge graph repositories as a unified source of truth.
+              </p>
+            </div>
+          </div>
+
+          <!-- Knowledge Discovery -->
+          <div class="bg-gray-800 rounded-xl md:rounded-2xl p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-5
+                      border border-gray-700
+                      shadow-md hover:shadow-lg
+                      hover:-translate-y-1
+                      transition-all duration-300">
+
+            <div class="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-lg"
+              style="background-color: rgba(168, 85, 247, 0.1);">
+              <mat-icon class="text-2xl" style="color: #a855f7;">search</mat-icon>
+            </div>
+
+            <div>
+              <h3 class="text-base md:text-lg font-bold text-white">
+                Knowledge Discovery
+              </h3>
+
+              <p class="text-sm text-gray-300 leading-relaxed">
+                We activate reasoning to uncover inconsistencies and hidden risk.
+              </p>
+            </div>
+          </div>
+
+          <!-- Knowledge Management -->
+          <div class="bg-gray-800 rounded-xl md:rounded-2xl p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-5
+                      border border-gray-700
+                      shadow-md hover:shadow-lg
+                      hover:-translate-y-1
+                      transition-all duration-300">
+
+            <div class="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-lg"
+              style="background-color: rgba(99, 102, 241, 0.1);">
+              <mat-icon class="text-2xl" style="color: #6366f1;">rule</mat-icon>
+            </div>
+
+            <div>
+              <h3 class="text-base md:text-lg font-bold text-white">
+                Knowledge Management
+              </h3>
+
+              <p class="text-sm text-gray-300 leading-relaxed">
+                We ensure continuous model governance and regulatory alignment.
+              </p>
+            </div>
+          </div>
+
+          <!-- Training & Enablement -->
+          <div class="bg-gray-800 rounded-xl md:rounded-2xl p-4 md:p-6 flex flex-col md:flex-row gap-4 md:gap-5
+                      border border-gray-700
+                      shadow-md hover:shadow-lg
+                      hover:-translate-y-1
+                      transition-all duration-300">
+
+            <div class="w-14 h-14 flex-shrink-0 flex items-center justify-center rounded-lg"
+              style="background-color: rgba(236, 72, 153, 0.1);">
+              <mat-icon class="text-2xl" style="color: #ec4899;">school</mat-icon>
+            </div>
+
+            <div>
+              <h3 class="text-base md:text-lg font-bold text-white">
+                Training & Enablement
+              </h3>
+
+              <p class="text-sm text-gray-300 leading-relaxed">
+                We enable teams to sustain and scale intelligence independently.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
     </div>
-
-
-
   </div>
 </section>
 
 <!-- A Smarter Way to Validate -->
-<section class="py-16 md:py-24 bg-gradient-to-b from-slate-50 to-white">
+<section class="py-8 md:py-6 bg-[#0d1117] shadow-sm">
 
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
     <!-- Heading -->
-    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">
-      <span class="text-blue-600">Kwalify™</span> — Intelligent Clinical Data Validation
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-left md:text-center mb-6 text-secondary">
+      <span style="color: var(--bg-primary);">Kwalify™</span> — Intelligent Clinical Data Validation
     </h2>
 
-    <p class="text-base md:text-lg lg:text-xl text-gray-800 text-center mb-8 font-semibold">
+    <p class="text-base md:text-lg lg:text-xl text-gray-300 text-left md:text-center mb-8 font-semibold">
       Powered by a Linked Clinical Data Model
     </p>
 
-    <p class="text-gray-700 text-center max-w-3xl mx-auto leading-relaxed mb-4 text-base sm:text-lg">
+    <p class="text-gray-300 text-left md:text-center max-w-3xl mx-auto leading-relaxed mb-4 text-base sm:text-lg">
       <strong>Kwalify™</strong> operationalizes the Care2Data knowledge-driven validation framework.
       Purpose-built for complex clinical quality checks, it applies semantic intelligence across linked datasets —
       strengthening accuracy, traceability, and regulatory readiness before submission.
     </p>
-    <p class="text-gray-700 text-center max-w-3xl mx-auto leading-relaxed mb-8 text-base sm:text-lg\">Designed to work
+    <p class="text-gray-300 text-left md:text-center max-w-3xl mx-auto leading-relaxed mb-8 text-base sm:text-lg\">
+      Designed to work
       alongside your
       existing systems, <strong>Kwalify™</strong> enhances validation without disrupting established workflows.</p>
   </div>
 
-  <hr class="max-w-md mx-auto my-10 border-gray-300">
+  <hr class="max-w-md mx-auto my-10  border-gray-800">
   <!-- Outcome Section -->
-  <div class="text-center mb-6">
-    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
+  <div class="text-left md:text-center mb-6 px-4 sm:px-6 lg:px-8">
+    <h3 class="text-2xl md:text-3xl font-bold mb-4 text-secondary">
       The Outcome
     </h3>
-    <p class="text-gray-700 text-lg font-medium">
+    <p class="text-gray-300 text-lg font-medium">
       Fewer queries. Faster reviews. <br> Greater confidence in every dataset.
     </p>
   </div>
 
 
-  <h3 class="text-2xl md:text-4xl font-bold mb-10 text-center text-gray-900">
+  <h3 class="text-2xl md:text-4xl px-4 sm:px-6 lg:px-8 font-bold mb-10 text-left md:text-center text-white">
     Why Teams Choose Kwalify™
   </h3>
 
   <!-- MASTER CARD CONTAINER -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
 
-    <div class="bg-white rounded-2xl md:rounded-3xl shadow-lg p-6 md:p-12 border border-gray-200">
+    <div class="bg-gray-800 rounded-2xl md:rounded-3xl shadow-lg p-6 md:p-12 border border-gray-700">
 
       <!-- Cards Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
 
         <!-- Card 1 -->
-        <div class="bg-gradient-to-br from-blue-50 to-blue-25 rounded-xl md:rounded-2xl p-6 text-center
-                  border border-blue-100
+        <div class="bg-gray-900 rounded-xl md:rounded-2xl p-6 text-center
+                  border border-gray-700
                   shadow-sm hover:shadow-md
                   hover:-translate-y-1
                   transition-all duration-300">
-          <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-blue-100 mb-4">
-            <mat-icon class="!text-blue-600 text-2xl">verified</mat-icon>
+          <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full mb-4"
+            style="background-color: rgba(65, 122, 227, 0.1);">
+            <mat-icon class="text-2xl" style="color: var(--bg-primary);">verified</mat-icon>
           </div>
 
-          <h3 class="font-bold text-gray-900 mb-3 text-base md:text-lg">
+          <h3 class="font-bold text-white mb-3 text-base md:text-lg">
             Built for clinical validation
           </h3>
 
-          <p class="text-sm text-gray-700 leading-relaxed">
+          <p class="text-sm text-gray-300 leading-relaxed">
             Engineered specifically for quality checks and regulatory standards.
           </p>
         </div>
 
         <!-- Card 2 -->
-        <div class="bg-gradient-to-br from-green-50 to-green-25 rounded-xl md:rounded-2xl p-6 text-center
-                  border border-green-100
+        <div class="bg-gray-900 rounded-xl md:rounded-2xl p-6 text-center
+                  border border-gray-700
                   shadow-sm hover:shadow-md
                   hover:-translate-y-1
                   transition-all duration-300">
-          <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-green-100 mb-4">
-            <mat-icon class="!text-green-600 text-2xl">psychology</mat-icon>
+          <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full mb-4"
+            style="background-color: rgba(34, 197, 94, 0.1);">
+            <mat-icon class="text-2xl" style="color: #22c55e;">psychology</mat-icon>
           </div>
 
-          <h3 class="font-bold text-gray-900 mb-3 text-base md:text-lg">
+          <h3 class="font-bold text-white mb-3 text-base md:text-lg">
             Context-aware & reasoning-enabled
           </h3>
 
-          <p class="text-sm text-gray-700 leading-relaxed">
+          <p class="text-sm text-gray-300 leading-relaxed">
             Embeds semantic intelligence directly into validation workflows.
           </p>
         </div>
 
         <!-- Card 3 -->
-        <div class="bg-gradient-to-br from-purple-50 to-purple-25 rounded-xl md:rounded-2xl p-6 text-center
-                  border border-purple-100
+        <div class="bg-gray-900 rounded-xl md:rounded-2xl p-6 text-center
+                  border border-gray-700
                   shadow-sm hover:shadow-md
                   hover:-translate-y-1
                   transition-all duration-300">
-          <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-purple-100 mb-4">
-            <mat-icon class="!text-purple-600 text-2xl">fact_check</mat-icon>
+          <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full mb-4"
+            style="background-color: rgba(168, 85, 247, 0.1);">
+            <mat-icon class="text-2xl" style="color: #a855f7;">fact_check</mat-icon>
           </div>
 
-          <h3 class="font-bold text-gray-900 mb-3 text-base md:text-lg">
+          <h3 class="font-bold text-white mb-3 text-base md:text-lg">
             Traceable by design
           </h3>
 
-          <p class="text-sm text-gray-700 leading-relaxed">
+          <p class="text-sm text-gray-300 leading-relaxed">
             Transparent documentation and lineage support audit readiness.
           </p>
         </div>
 
         <!-- Card 4 -->
-        <div class="bg-gradient-to-br from-indigo-50 to-indigo-25 rounded-xl md:rounded-2xl p-6 text-center
-                  border border-indigo-100
+        <div class="bg-gray-900 rounded-xl md:rounded-2xl p-6 text-center
+                  border border-gray-700
                   shadow-sm hover:shadow-md
                   hover:-translate-y-1
                   transition-all duration-300">
-          <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-indigo-100 mb-4">
-            <mat-icon class="!text-indigo-600 text-2xl">integration_instructions</mat-icon>
+          <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full mb-4"
+            style="background-color: rgba(99, 102, 241, 0.1);">
+            <mat-icon class="text-2xl" style="color: #6366f1;">integration_instructions</mat-icon>
           </div>
 
-          <h3 class="font-bold text-gray-900 mb-3 text-base md:text-lg">
+          <h3 class="font-bold text-white mb-3 text-base md:text-lg">
             Works within your ecosystem
           </h3>
 
-          <p class="text-sm text-gray-700 leading-relaxed">
+          <p class="text-sm text-gray-300 leading-relaxed">
             Seamless integration alongside existing tools.
           </p>
         </div>
 
       </div>
 
-      <!-- CTA INSIDE SAME CARD -->
       <div class="text-center mt-10">
-        <a routerLink="/contact"
-          class="inline-flex items-center justify-center gap-2 text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 cursor-pointer">
-          Learn More
-          <mat-icon class="text-base">keyboard_arrow_right</mat-icon>
-        </a>
+        <!-- CTA -->
+        <button
+          class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+          style="background-color: var(--bg-primary); color: white;"
+          onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+          onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+          Learn More →
+        </button>
       </div>
 
     </div>
@@ -514,15 +559,15 @@
 </section>
 
 <!-- Who We Help -->
-<section class="py-16 md:py-24 bg-gradient-to-b from-slate-50 to-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<section class="py-8 md:py-6 bg-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
 
     <!-- Heading -->
-    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-gray-900">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold mb-8 text-secondary">
       Built for Detail-Oriented Clinical Teams
     </h2>
 
-    <p class="text-base sm:text-lg lg:text-xl text-gray-700 mb-6 max-w-3xl mx-auto leading-relaxed font-medium">
+    <p class="text-base sm:text-lg lg:text-xl text-gray-300 mb-6 max-w-3xl leading-relaxed font-medium">
       For Clinical Teams Who Lead With Knowledge
       <br>
       Where Precision Meets Accountability
@@ -530,86 +575,90 @@
       For Teams Who Don't Guess. They Know.
     </p>
 
-    <p class="text-gray-700 text-center max-w-3xl mx-auto leading-relaxed mb-6 text-base sm:text-lg">
+    <p class="text-gray-300 max-w-3xl leading-relaxed mb-6 text-base sm:text-lg">
       Care2Data is designed for teams who demand precision in clinical data validation—whether managing a single study
       or complex, multi-study programs.
     </p>
 
     <!-- Cards Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 my-6">
 
       <!-- Card 1 -->
-      <div class="bg-white rounded-2xl p-6 md:p-8 text-center
-                border border-gray-200
+      <div class="bg-gray-800 rounded-2xl p-6 md:p-8 text-center
+                border border-gray-700
                 shadow-md hover:shadow-lg
                 hover:-translate-y-1
                 transition-all duration-300">
-        <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-blue-50 mb-6">
-          <mat-icon class="!text-blue-600 text-2xl">biotech</mat-icon>
+        <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full mb-6"
+          style="background-color: rgba(65, 122, 227, 0.1);">
+          <mat-icon class="text-2xl" style="color: var(--bg-primary);">biotech</mat-icon>
         </div>
 
-        <h3 class="font-bold text-gray-900 mb-3 text-base md:text-lg">
+        <h3 class="font-bold text-white mb-3 text-base md:text-lg">
           Biotech & Pharma
         </h3>
 
-        <p class="text-sm text-gray-700 leading-relaxed">
+        <p class="text-sm text-gray-300 leading-relaxed">
           Ensure assets are supported by high-quality, submission-ready data.
         </p>
       </div>
 
       <!-- Card 2 -->
-      <div class="bg-white rounded-2xl p-6 md:p-8 text-center
-                border border-gray-200
+      <div class="bg-gray-800 rounded-2xl p-6 md:p-8 text-center
+                border border-gray-700
                 shadow-md hover:shadow-lg
                 hover:-translate-y-1
                 transition-all duration-300">
-        <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-green-50 mb-6">
-          <mat-icon class="!text-green-600 text-2xl">handshake</mat-icon>
+        <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full mb-6"
+          style="background-color: rgba(34, 197, 94, 0.1);">
+          <mat-icon class="text-2xl" style="color: #22c55e;">handshake</mat-icon>
         </div>
 
-        <h3 class="font-bold text-gray-900 mb-3 text-base md:text-lg">
+        <h3 class="font-bold text-white mb-3 text-base md:text-lg">
           CROs & FSPs
         </h3>
 
-        <p class="text-sm text-gray-700 leading-relaxed">
+        <p class="text-sm text-gray-300 leading-relaxed">
           Deliver sponsor-ready datasets with less manual effort.
         </p>
       </div>
 
       <!-- Card 3 -->
-      <div class="bg-white rounded-2xl p-6 md:p-8 text-center
-                  border border-gray-200
+      <div class="bg-gray-800 rounded-2xl p-6 md:p-8 text-center
+                  border border-gray-700
                   shadow-md hover:shadow-lg
                   hover:-translate-y-1
                   transition-all duration-300">
-        <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-purple-50 mb-6">
-          <mat-icon class="!text-purple-600 text-2xl">analytics</mat-icon>
+        <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full mb-6"
+          style="background-color: rgba(168, 85, 247, 0.1);">
+          <mat-icon class="text-2xl" style="color: #a855f7;">analytics</mat-icon>
         </div>
 
-        <h3 class="font-bold text-gray-900 mb-3 text-base md:text-lg">
+        <h3 class="font-bold text-white mb-3 text-base md:text-lg">
           Statistical Programmers
         </h3>
 
-        <p class="text-sm text-gray-700 leading-relaxed">
+        <p class="text-sm text-gray-300 leading-relaxed">
           Spend less time debugging and more time analyzing.
         </p>
       </div>
 
       <!-- Card 4 -->
-      <div class="bg-white rounded-2xl p-6 md:p-8 text-center
-                  border border-gray-200
+      <div class="bg-gray-800 rounded-2xl p-6 md:p-8 text-center
+                  border border-gray-700
                   shadow-md hover:shadow-lg
                   hover:-translate-y-1
                   transition-all duration-300">
-        <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-indigo-50 mb-6">
-          <mat-icon class="!text-indigo-600 text-2xl">rule</mat-icon>
+        <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full mb-6"
+          style="background-color: rgba(99, 102, 241, 0.1);">
+          <mat-icon class="text-2xl" style="color: #6366f1;">rule</mat-icon>
         </div>
 
-        <h3 class="font-bold text-gray-900 mb-3 text-base md:text-lg">
+        <h3 class="font-bold text-white mb-3 text-base md:text-lg">
           QA & Regulatory Teams
         </h3>
 
-        <p class="text-sm text-gray-700 leading-relaxed">
+        <p class="text-sm text-gray-300 leading-relaxed">
           Get the traceability and documentation needed to sign off confidently.
         </p>
       </div>
@@ -621,15 +670,16 @@
 </section>
 
 <!-- Why Choose Us? -->
-<section class="py-16 md:py-24 bg-gradient-to-b from-slate-50 to-white">
+<section class="py-8 md:py-6 bg-black">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
     <!-- Heading -->
-    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-center text-gray-900">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold mb-6 text-left md:text-center text-secondary">
       Serious Software for Serious Science
     </h2>
 
-    <p class="text-base sm:text-lg lg:text-xl text-gray-700 text-center max-w-3xl mx-auto leading-relaxed mb-6">
+    <p
+      class="text-base sm:text-lg lg:text-xl text-gray-500 text-left md:text-center max-w-3xl mx-auto leading-relaxed mb-6">
       We didn’t build a generic data tool; we built a regulatory tool.
     </p>
 
@@ -637,58 +687,58 @@
     <div class="max-w-5xl mx-auto">
 
       <!-- Card Container -->
-      <div class="bg-white rounded-2xl md:rounded-3xl shadow-lg border border-gray-200 overflow-hidden">
+      <div class="bg-gray-800 rounded-2xl md:rounded-3xl shadow-lg border border-gray-700 overflow-hidden">
 
         <div class="overflow-x-auto">
           <table class="min-w-full text-left">
 
             <!-- Header -->
-            <thead class="bg-gray-100">
+            <thead class="bg-gray-700">
               <tr>
-                <th class="px-6 md:px-8 py-4 text-sm md:text-base font-bold text-gray-900 tracking-wide">
+                <th class="px-6 md:px-8 py-4 text-sm md:text-base font-bold text-white tracking-wide">
                   Feature
                 </th>
-                <th class="px-6 md:px-8 py-4 text-sm md:text-base font-bold text-gray-900 tracking-wide">
+                <th class="px-6 md:px-8 py-4 text-sm md:text-base font-bold text-white tracking-wide">
                   Benefit
                 </th>
               </tr>
             </thead>
 
             <!-- Body -->
-            <tbody class="divide-y divide-gray-100">
+            <tbody class="divide-y divide-gray-700">
 
-              <tr class="hover:bg-gray-50 transition duration-200">
-                <td class="px-6 md:px-8 py-4 font-bold text-gray-900">
+              <tr class="hover:bg-gray-700 transition duration-200">
+                <td class="px-6 md:px-8 py-4 font-bold text-white">
                   Validation-First Design
                 </td>
-                <td class="px-6 md:px-8 py-4 text-gray-700">
+                <td class="px-6 md:px-8 py-4 text-gray-300">
                   Accuracy and compliance is prioritized over everything else.
                 </td>
               </tr>
 
-              <tr class="hover:bg-gray-50 transition duration-200">
-                <td class="px-6 md:px-8 py-4 font-bold text-gray-900">
+              <tr class="hover:bg-gray-700 transition duration-200">
+                <td class="px-6 md:px-8 py-4 font-bold text-white">
                   Audit-Ready Evidence
                 </td>
-                <td class="px-6 md:px-8 py-4 text-gray-700">
+                <td class="px-6 md:px-8 py-4 text-gray-300">
                   End-to-end traceability is maintained for every validation step.
                 </td>
               </tr>
 
-              <tr class="hover:bg-gray-50 transition duration-200">
-                <td class="px-6 md:px-8 py-4 font-bold text-gray-900">
+              <tr class="hover:bg-gray-700 transition duration-200">
+                <td class="px-6 md:px-8 py-4 font-bold text-white">
                   Low-Stress Deployment
                 </td>
-                <td class="px-6 md:px-8 py-4 text-gray-700">
+                <td class="px-6 md:px-8 py-4 text-gray-300">
                   No disruption to existing systems.
                 </td>
               </tr>
 
-              <tr class="hover:bg-gray-50 transition duration-200">
-                <td class="px-6 md:px-8 py-4 font-bold text-gray-900">
+              <tr class="hover:bg-gray-700 transition duration-200">
+                <td class="px-6 md:px-8 py-4 font-bold text-white">
                   Scalable Architecture
                 </td>
-                <td class="px-6 md:px-8 py-4 text-gray-700">
+                <td class="px-6 md:px-8 py-4 text-gray-300">
                   Processes that scale seamlessly from one study to many.
                 </td>
               </tr>
@@ -702,29 +752,31 @@
 
     <!-- CTA INSIDE SAME CARD -->
     <div class="text-center mt-10">
-      <a routerLink="/contact"
-        class="inline-flex items-center justify-center gap-2 text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 cursor-pointer">
-
+      <button
+        class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+        style="background-color: var(--bg-primary); color: white;"
+        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+        onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
         Contact Us
-      </a>
+      </button>
     </div>
   </div>
 </section>
 
 <!-- Final Conversion -->
-<section class="py-16 md:py-24 bg-gradient-to-b from-slate-50 to-white">
+<section class="py-8 md:py-6 bg-gray-900">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
     <!-- Heading -->
-    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-gray-900">
-      Compliance Is Expected. Confidence Is Earned.
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold mb-8 text-white leading-snug">
+      Compliance Is Expected. <br> Confidence Is Earned.
     </h2>
 
-    <p class="text-base md:text-lg lg:text-xl text-gray-800 mb-8 font-medium">
+    <p class="text-base md:text-lg lg:text-xl text-gray-300 mb-8 font-medium">
       Clinical decisions demand more than checked boxes.
     </p>
 
-    <p class="text-gray-700 max-w-3xl mx-auto leading-relaxed mb-10 text-base sm:text-lg">
+    <p class="text-gray-300 max-w-3xl mx-auto leading-relaxed mb-10 text-base sm:text-lg">
       Care2Data connects your data through knowledge graphs — embedding semantic intelligence
       to transform validation into a submission-ready advantage.
     </p>
@@ -733,26 +785,31 @@
     <div class="flex flex-col sm:flex-row justify-center gap-4 flex-wrap">
 
       <!-- Primary CTA -->
-      <a routerLink="/contact"
-        class="inline-flex items-center justify-center gap-2 text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 cursor-pointer">
-
-        Request a Demo
-        <mat-icon class="text-base">keyboard_arrow_right</mat-icon>
-      </a>
+      <button routerLink="/contact-us"
+        class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+        style="background-color: var(--bg-primary); color: white;"
+        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+        onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+        Request a Demo →
+      </button>
 
       <!-- Secondary CTA -->
-      <a routerLink="/contact"
-        class="inline-flex items-center justify-center gap-2 text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 cursor-pointer">
-
+      <button
+        class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+        style="background-color: var(--bg-primary); color: white;"
+        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+        onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
         Contact Us
-      </a>
+      </button>
 
       <!-- Tertiary CTA -->
-      <a routerLink="/contact"
-        class="inline-flex items-center justify-center gap-2 text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 cursor-pointer">
-
+      <button
+        class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+        style="background-color: var(--bg-primary); color: white;"
+        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+        onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
         Download Overview
-      </a>
+      </button>
 
     </div>
 

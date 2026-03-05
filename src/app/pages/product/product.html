@@ -1,5 +1,5 @@
 <!-- Hero Section -->
-<section class="min-h-screen flex items-center justify-center bg-white py-12 md:py-20">
+<section class="min-h-screen flex items-center justify-center bg-gray-900 py-12 md:py-20">
     <div
         class="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center px-4 sm:px-6 lg:px-8">
 
@@ -8,13 +8,14 @@
 
             <!-- Headline -->
             <h1
-                class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-gray-900">
-                From Raw Clinical Data to
-                <span class="text-blue-600 block sm:inline">Submission-Ready Confidence</span>
+                class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-white font-heading">
+                From Raw Clinical Data <br> to
+                <i class="block sm:inline" style="color: var(--bg-primary);">Submission-Ready </i> <br>
+                Confidence
             </h1>
 
             <!-- Subtext -->
-            <p class="text-base sm:text-lg md:text-lg text-gray-700 leading-relaxed font-normal max-w-2xl">
+            <p class="text-base sm:text-lg md:text-lg text-gray-300 leading-relaxed font-normal max-w-2xl">
                 Care2Data's flagship product <strong class="font-semibold">KWALIFY™</strong> offers smart clinical data
                 validation and
                 verification for the
@@ -25,13 +26,19 @@
 
             <!-- CTA -->
             <div class="flex flex-col sm:flex-row gap-4 justify-start pt-4">
-                <button type="submit"
-                    class="inline-flex items-center justify-center gap-2 text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 cursor-pointer">
-                    Request a Demo <mat-icon class="text-base"> keyboard_arrow_right </mat-icon>
+                <button routerLink="/contact-us"
+                    class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+                    style="background-color: var(--bg-primary); color: white;"
+                    onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+                    onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+                    Request a Demo →
                 </button>
-                <button type="submit"
-                    class="inline-flex items-center justify-center gap-2 text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 cursor-pointer">
-                    Learn More <mat-icon class="text-base"> keyboard_arrow_right </mat-icon>
+                <button
+                    class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+                    style="background-color: var(--bg-primary); color: white;"
+                    onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+                    onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+                    Learn More →
                 </button>
             </div>
 
@@ -46,12 +53,12 @@
 </section>
 
 <!--  About KWALIFY -->
-<section class="py-16 md:py-24 bg-white">
+<section class="py-16 md:py-24 bg-[#0d1117]">
     <div class="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8 px-4 sm:px-6 lg:px-8">
 
         <!-- Heading -->
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 md:mb-16 text-gray-900">
-            About <span class="text-blue-600">KWALIFY</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-left mb-6 md:mb-16 text-white font-heading">
+            About <span class="text-secondary">KWALIFY</span>
         </h2>
 
         <!-- Grid Layout -->
@@ -59,11 +66,11 @@
 
             <!-- Left Content -->
             <div class="space-y-6">
-                <h3 class="text-lg md:text-xl font-semibold text-blue-600">
+                <h3 class="text-lg md:text-xl font-semibold text-secondary">
                     What is KWALIFY?
                 </h3>
 
-                <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                <p class="text-base md:text-lg text-white leading-relaxed">
                     <strong class="font-semibold">KWALIFY™</strong> is a modern clinical data validation and
                     verification platform engineered
                     by data scientists, ontologists, and domain architects. The platform analyzes complex clinical trial
@@ -71,14 +78,14 @@
                     inconsistencies, and data integrity risks.
                 </p>
 
-                <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                <p class="text-base md:text-lg text-white leading-relaxed">
                     <strong class="font-semibold">KWALIFY™</strong> continuously checks new inputs against a corporate
                     knowledge framework to
                     detect subtle discrepancies across sources, prevent schema drift, and maintain harmonized,
                     analysis-ready data.
                 </p>
 
-                <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+                <p class="text-base md:text-lg text-white leading-relaxed">
                     Built for sponsors, CROs, biotech teams, and regulatory professionals, KWALIFY enhances data
                     accuracy, reliability, and semantic relationships across datasets — without the manual burden of
                     traditional rule-based checks or double programming.
@@ -86,14 +93,14 @@
             </div>
 
             <!-- Right Content (Optional Image / Illustration / Card) -->
-            <div class="hidden md:flex items-center justify-center min-h-96 bg-gray-100 rounded-2xl">
+            <div class="hidden md:flex items-center justify-center min-h-96 bg-gray-800 rounded-2xl">
                 <!-- <img src="assets/logo.png" alt=""> -->
             </div>
 
         </div>
 
         <!-- Benefits Section Heading -->
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 text-white">
             Benefits at a Glance
         </h2>
 
@@ -103,54 +110,54 @@
 
                 <!-- Panel 1 -->
                 <mat-expansion-panel #panel1 hideToggle
-                    class="!bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-50">
-                        <mat-panel-title class="text-sm md:text-md font-bold text-gray-900">
+                    class="!bg-gray-800 border border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-700">
+                        <mat-panel-title class="text-sm md:text-md font-bold" style="color: white;">
                             Identify issues early
                         </mat-panel-title>
 
-                        <mat-icon class="ml-auto text-blue-600">
+                        <mat-icon class="ml-auto" style="color: var(--bg-primary);">
                             {{ panel1.expanded ? 'remove' : 'add' }}
                         </mat-icon>
                     </mat-expansion-panel-header>
 
-                    <p class="text-sm md:text-base text-gray-700 leading-relaxed px-0 py-3 border-t border-gray-200">
+                    <p class="text-sm md:text-base text-gray-300 leading-relaxed px-0 py-3 border-t border-gray-700">
                         Detect errors at early lifecycle stages.
                     </p>
                 </mat-expansion-panel>
 
                 <!-- Panel 2 -->
                 <mat-expansion-panel #panel2 hideToggle
-                    class="!bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-50">
-                        <mat-panel-title class="text-sm md:text-md font-bold text-gray-900">
+                    class="!bg-gray-800 border border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-700">
+                        <mat-panel-title class="text-sm md:text-md font-bold" style="color: white;">
                             Faster resolution timelines
                         </mat-panel-title>
 
-                        <mat-icon class="ml-auto text-blue-600">
+                        <mat-icon class="ml-auto" style="color: var(--bg-primary);">
                             {{ panel2.expanded ? 'remove' : 'add' }}
                         </mat-icon>
                     </mat-expansion-panel-header>
 
-                    <p class="text-sm md:text-base text-gray-700 leading-relaxed px-0 py-3 border-t border-gray-200">
+                    <p class="text-sm md:text-base text-gray-300 leading-relaxed px-0 py-3 border-t border-gray-700">
                         Reduce rework and downstream validation cycles.
                     </p>
                 </mat-expansion-panel>
 
                 <!-- Panel 3 -->
                 <mat-expansion-panel #panel3 hideToggle
-                    class="!bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-50">
-                        <mat-panel-title class="text-sm md:text-md font-bold text-gray-900">
+                    class="!bg-gray-800 border border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-700">
+                        <mat-panel-title class="text-sm md:text-md font-bold" style="color: white;">
                             Deliver accurate, submission-ready data
                         </mat-panel-title>
 
-                        <mat-icon class="ml-auto text-blue-600">
+                        <mat-icon class="ml-auto" style="color: var(--bg-primary);">
                             {{ panel3.expanded ? 'remove' : 'add' }}
                         </mat-icon>
                     </mat-expansion-panel-header>
 
-                    <p class="text-sm md:text-base text-gray-700 leading-relaxed px-0 py-3 border-t border-gray-200">
+                    <p class="text-sm md:text-base text-gray-300 leading-relaxed px-0 py-3 border-t border-gray-700">
                         Ensure accuracy, timelines, and compliance outcomes.
                     </p>
                 </mat-expansion-panel>
@@ -161,18 +168,18 @@
 </section>
 
 <!-- How KWALIFY Works -->
-<section class="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
-    <div class="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8">
+<section class="py-16 md:py-24 bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Heading -->
-        <div class="text-center mb-6 md:mb-16">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-                How <span class="text-blue-600">KWALIFY</span> Works
+        <div class="text-left mb-6 md:mb-16">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white font-heading">
+                How <span class="text-primary">KWALIFY</span> Works
             </h2>
-            <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-4">
+            <p class="text-lg md:text-xl text-white max-w-3xl mb-4">
                 From Data Collection to Submission-Ready Confidence
             </p>
-            <p class="text-base md:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p class="text-base md:text-lg text-gray-300 max-w-4xl leading-relaxed">
                 KWALIFY follows a structured, intelligent workflow that strengthens clinical data integrity across the
                 validation lifecycle.
             </p>
@@ -183,12 +190,12 @@
 
             <!-- Step 1 -->
             <div
-                class="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                <div class="text-blue-600 font-bold text-lg mb-4">Step 1</div>
-                <h3 class="font-semibold text-lg md:text-xl mb-4 text-gray-900">
+                class="bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div class="font-bold text-lg mb-4" style="color: var(--bg-primary);">Step 1</div>
+                <h3 class="font-semibold text-lg md:text-xl mb-4 text-white">
                     Data Integration & Representation
                 </h3>
-                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed">
                     Clinical trial data is ingested through EDC/CDMS and related sources, represented using standard
                     terminologies and knowledge models to create a harmonised foundation for validation.
                 </p>
@@ -196,12 +203,12 @@
 
             <!-- Step 2 -->
             <div
-                class="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                <div class="text-blue-600 font-bold text-lg mb-4">Step 2</div>
-                <h3 class="font-semibold text-lg md:text-xl mb-4 text-gray-900">
+                class="bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div class="font-bold text-lg mb-4" style="color: var(--bg-primary);">Step 2</div>
+                <h3 class="font-semibold text-lg md:text-xl mb-4 text-white">
                     Semantic Association & Inference
                 </h3>
-                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed">
                     KWALIFY analyses relationships and dependencies across datasets to identify implicit, missing, or
                     contradictory data points.
                 </p>
@@ -209,12 +216,12 @@
 
             <!-- Step 3 -->
             <div
-                class="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                <div class="text-blue-600 font-bold text-lg mb-4">Step 3</div>
-                <h3 class="font-semibold text-lg md:text-xl mb-4 text-gray-900">
+                class="bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div class="font-bold text-lg mb-4" style="color: var(--bg-primary);">Step 3</div>
+                <h3 class="font-semibold text-lg md:text-xl mb-4 text-white">
                     Contextual Validation & Intelligent Rules
                 </h3>
-                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed">
                     Detects discrepancies beyond traditional rule-based checks using context-aware validation logic to
                     uncover complex, cross-variable inconsistencies.
                 </p>
@@ -222,12 +229,12 @@
 
             <!-- Step 4 -->
             <div
-                class="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-                <div class="text-blue-600 font-bold text-lg mb-4">Step 4</div>
-                <h3 class="font-semibold text-lg md:text-xl mb-4 text-gray-900">
+                class="bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div class="font-bold text-lg mb-4" style="color: var(--bg-primary);">Step 4</div>
+                <h3 class="font-semibold text-lg md:text-xl mb-4 text-white">
                     Actionable, Submission-Ready Outputs
                 </h3>
-                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed">
                     Clear, interpretable validation results enable faster issue resolution and delivery of audit-ready,
                     regulatory-compliant datasets.
                 </p>
@@ -239,15 +246,15 @@
 </section>
 
 <!-- Key Features -->
-<section class="py-16 md:py-24 bg-white">
+<section class="py-16 md:py-24 bg-[#0d1117]">
     <div class="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8">
 
         <!-- Heading -->
-        <div class="text-center mb-6 md:mb-16">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-                Key <span class="text-blue-600">Features</span>
+        <div class="text-left mb-6 md:mb-16">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white font-heading">
+                Key <span class="text-secondary">Features</span>
             </h2>
-            <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
+            <p class="text-lg md:text-xl text-white max-w-3xl">
                 Intelligent validation capabilities designed for modern clinical data environments.
             </p>
         </div>
@@ -256,64 +263,68 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
 
             <!-- Feature 1 -->
-            <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-200 
+            <div class="group bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700 
                   hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
 
-                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-16 transition-all duration-300"></div>
+                <div class="h-1 w-12 mb-6 group-hover:w-16 transition-all duration-300"
+                    style="background-color: var(--bg-primary);"></div>
 
-                <h3 class="font-semibold text-lg md:text-xl mb-3 text-gray-900">
+                <h3 class="font-semibold text-lg md:text-xl mb-3 text-white">
                     Automated Data Validation
                 </h3>
 
-                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed">
                     Automatic clinical data validation that identifies cross-dataset inconsistencies, minimising manual
                     quality control and duplicate programming
                 </p>
             </div>
 
             <!-- Feature 2 -->
-            <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-200 
+            <div class="group bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700 
                   hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
 
-                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-16 transition-all duration-300"></div>
+                <div class="h-1 w-12 mb-6 group-hover:w-16 transition-all duration-300"
+                    style="background-color: var(--bg-primary);"></div>
 
-                <h3 class="font-semibold text-lg md:text-xl mb-3 text-gray-900">
+                <h3 class="font-semibold text-lg md:text-xl mb-3 text-white">
                     Semantic Intelligence
                 </h3>
 
-                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed">
                     Application of semantic inference uncovering context aware inconsistencies beyond rule-based
                     validation
                 </p>
             </div>
 
             <!-- Feature 3 -->
-            <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-200 
+            <div class="group bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700 
                   hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
 
-                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-16 transition-all duration-300"></div>
+                <div class="h-1 w-12 mb-6 group-hover:w-16 transition-all duration-300"
+                    style="background-color: var(--bg-primary);"></div>
 
-                <h3 class="font-semibold text-lg md:text-xl mb-3 text-gray-900">
+                <h3 class="font-semibold text-lg md:text-xl mb-3 text-white">
                     Regulatory Compliance & Traceability
                 </h3>
 
-                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed">
                     End-to-end traceable validation and audit trails that align with regulatory requirements including
                     21 CFR Part 11
                 </p>
             </div>
 
             <!-- Feature 4 -->
-            <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-200 
+            <div class="group bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700 
                   hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
 
-                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-16 transition-all duration-300"></div>
+                <div class="h-1 w-12 mb-6 group-hover:w-16 transition-all duration-300"
+                    style="background-color: var(--bg-primary);"></div>
 
-                <h3 class="font-semibold text-lg md:text-xl mb-3 text-gray-900">
+                <h3 class="font-semibold text-lg md:text-xl mb-3 text-white">
                     Quality Dashboards & Actionable Insights
                 </h3>
 
-                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed">
                     Real-time dashboards that allow users to analyse quality issues, enable prioritisation, track
                     workflows, and resolutions of discrepancies at a glance
                 </p>
@@ -325,143 +336,150 @@
 </section>
 
 <!-- Why Traditional Validation Falls Short -->
-<section class="py-16 md:py-24 bg-gray-50">
-    <div class="max-w-6xl mx-auto">
+<section class="py-16 md:py-24 bg-gray-900">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center px-4 sm:px-6 lg:px-8">
 
         <!-- Heading -->
-        <div class="text-center mb-6 md:mb-16">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-                Why Traditional <span class="text-blue-600">Validation Falls Short</span>
+        <div class="text-left mb-6 md:mb-16">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white font-heading">
+                Why Traditional <span style="color: var(--bg-primary);">Validation Falls Short</span>
             </h2>
 
-            <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p class="text-lg md:text-xl text-white max-w-3xl mx-auto leading-relaxed">
                 As clinical datasets grow in scale and complexity, traditional validation
                 approaches such as manual review and double programming struggle to keep pace.
             </p>
         </div>
 
-        <!-- Simple Bullet Layout -->
-        <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-sm border border-gray-200">
-            <ul class="space-y-5 text-gray-700">
+        <div>
+            <!-- Simple Bullet Layout -->
+            <div class="max-w-2xl mx-auto bg-gray-800 p-8 md:p-12 rounded-xl shadow-sm border border-gray-700">
+                <ul class="space-y-5 text-gray-300">
 
-                <li class="flex gap-4 items-start">
-                    <span class="text-blue-600 font-bold text-xl flex-shrink-0">—</span>
-                    <span class="text-base md:text-lg">High time and operational cost</span>
-                </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="font-bold text-xl flex-shrink-0" style="color: var(--bg-primary);">—</span>
+                        <span class="text-base md:text-lg">High time and operational cost</span>
+                    </li>
 
-                <li class="flex gap-4 items-start">
-                    <span class="text-blue-600 font-bold text-xl flex-shrink-0">—</span>
-                    <span class="text-base md:text-lg">Heavy reliance on manual effort and expertise</span>
-                </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="font-bold text-xl flex-shrink-0" style="color: var(--bg-primary);">—</span>
+                        <span class="text-base md:text-lg">Heavy reliance on manual effort and expertise</span>
+                    </li>
 
-                <li class="flex gap-4 items-start">
-                    <span class="text-blue-600 font-bold text-xl flex-shrink-0">—</span>
-                    <span class="text-base md:text-lg">Human and inter-rater variability</span>
-                </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="font-bold text-xl flex-shrink-0" style="color: var(--bg-primary);">—</span>
+                        <span class="text-base md:text-lg">Human and inter-rater variability</span>
+                    </li>
 
-                <li class="flex gap-4 items-start">
-                    <span class="text-blue-600 font-bold text-xl flex-shrink-0">—</span>
-                    <span class="text-base md:text-lg">Limited scope of discrepancy detection</span>
-                </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="font-bold text-xl flex-shrink-0" style="color: var(--bg-primary);">—</span>
+                        <span class="text-base md:text-lg">Limited scope of discrepancy detection</span>
+                    </li>
 
-                <li class="flex gap-4 items-start">
-                    <span class="text-blue-600 font-bold text-xl flex-shrink-0">—</span>
-                    <span class="text-base md:text-lg">Lack of contextual and semantic validation</span>
-                </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="font-bold text-xl flex-shrink-0" style="color: var(--bg-primary);">—</span>
+                        <span class="text-base md:text-lg">Lack of contextual and semantic validation</span>
+                    </li>
 
-                <li class="flex gap-4 items-start">
-                    <span class="text-blue-600 font-bold text-xl flex-shrink-0">—</span>
-                    <span class="text-base md:text-lg">Need for additional downstream QC cycles</span>
-                </li>
+                    <li class="flex gap-4 items-start">
+                        <span class="font-bold text-xl flex-shrink-0" style="color: var(--bg-primary);">—</span>
+                        <span class="text-base md:text-lg">Need for additional downstream QC cycles</span>
+                    </li>
 
-            </ul>
-        </div>
+                </ul>
+            </div>
 
-        <!-- Closing Line -->
-        <div class="text-center mt-12">
-            <p class="text-base md:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                As a result, traditional methods struggle to scale and often fail to detect deeper data inconsistencies,
-                creating risk during regulatory submission.
-            </p>
+            <!-- Closing Line -->
+            <div class="text-justify mt-12">
+                <p class="text-base md:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    As a result, traditional methods struggle to scale and often fail to detect deeper data
+                    inconsistencies,
+                    creating risk during regulatory submission.
+                </p>
+            </div>
         </div>
 
     </div>
 </section>
 
 <!-- Why Choose -->
-<section class="py-16 md:py-24 bg-white">
+<section class="py-16 md:py-24 bg-[#0d1117]">
     <div class="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8">
 
         <!-- Heading -->
-        <div class="text-center mb-6 md:mb-16">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
-                Why Choose <span class="text-blue-600">KWALIFY</span>
+        <div class="text-left mb-6 md:mb-16">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white font-heading">
+                Why Choose <span class="text-secondary">KWALIFY</span>
             </h2>
-            <p class="text-lg md:text-xl text-blue-600 font-semibold mt-4">Business Benefits</p>
+            <p class="text-lg md:text-xl text-white font-semibold mt-4">Business Benefits</p>
         </div>
 
         <!-- Features Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
 
             <!-- Feature 1 -->
-            <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-200 
+            <div class="group bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700 
                   hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
 
-                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-16 transition-all duration-300"></div>
+                <div class="h-1 w-12 mb-6 group-hover:w-16 transition-all duration-300"
+                    style="background-color: var(--bg-primary);"></div>
 
-                <h3 class="font-semibold text-lg md:text-xl mb-3 text-gray-900">
+                <h3 class="font-semibold text-lg md:text-xl mb-3 text-white">
                     Trustworthy Data
                 </h3>
 
-                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed">
                     Enhanced accuracy and consistent data through early stage detection and analysis of complex
                     discrepancies
                 </p>
             </div>
 
             <!-- Feature 2 -->
-            <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-200 
+            <div class="group bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700 
                   hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
 
-                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-16 transition-all duration-300"></div>
+                <div class="h-1 w-12 mb-6 group-hover:w-16 transition-all duration-300"
+                    style="background-color: var(--bg-primary);"></div>
 
-                <h3 class="font-semibold text-lg md:text-xl mb-3 text-gray-900">
+                <h3 class="font-semibold text-lg md:text-xl mb-3 text-white">
                     Shorten Cycle Times
                 </h3>
 
-                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed">
                     Reduced rework and accelerated dataset readiness for QA/regulatory submission through automated,
                     intelligent validation workflows
                 </p>
             </div>
 
             <!-- Feature 3 -->
-            <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-200 
+            <div class="group bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700 
                   hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
 
-                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-16 transition-all duration-300"></div>
+                <div class="h-1 w-12 mb-6 group-hover:w-16 transition-all duration-300"
+                    style="background-color: var(--bg-primary);"></div>
 
-                <h3 class="font-semibold text-lg md:text-xl mb-3 text-gray-900">
+                <h3 class="font-semibold text-lg md:text-xl mb-3 text-white">
                     Mitigate Regulatory Risk
                 </h3>
 
-                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed">
                     Smoother submissions with fewer regulatory queries with traceable validation outputs and audit-ready
                     processes
                 </p>
             </div>
 
             <!-- Feature 4 -->
-            <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-200 
+            <div class="group bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-700 
                   hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
 
-                <div class="h-1 w-12 bg-blue-600 mb-6 group-hover:w-16 transition-all duration-300"></div>
+                <div class="h-1 w-12 mb-6 group-hover:w-16 transition-all duration-300"
+                    style="background-color: var(--bg-primary);"></div>
 
-                <h3 class="font-semibold text-lg md:text-xl mb-3 text-gray-900">
+                <h3 class="font-semibold text-lg md:text-xl mb-3 text-white">
                     Scalable Across Trials
                 </h3>
 
-                <p class="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p class="text-gray-300 text-sm md:text-base leading-relaxed">
                     KWALIFY scales seamlessly from Phase I studies to large, multi-centre clinical trials without
                     increasing operational burden.
                 </p>
@@ -473,15 +491,16 @@
 </section>
 
 <!-- What Makes KWALIFY Different -->
-<section class="py-16 md:py-24 bg-gray-50">
+<section class="py-16 md:py-24 bg-gray-900">
     <div class="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8">
 
         <!-- Section Heading -->
-        <div class="text-center mb-6 md:mb-16">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-                <span class="text-blue-600">KWALIFY</span> Supports Your Role
+        <div class="text-left mb-6 md:mb-16">
+            <h2
+                class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white font-heading leading-tight tracking-tight">
+                <span style="color: var(--bg-primary);">KWALIFY</span> Supports Your Role
             </h2>
-            <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
+            <p class="text-lg md:text-xl text-white max-w-3xl">
                 Designed to meet the distinct needs of CROs, sponsors, and regulatory teams
                 involved in clinical trial data validation.
             </p>
@@ -491,125 +510,134 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
             <!-- Card 1 -->
-            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 
+            <div class="bg-gray-800 rounded-xl shadow-sm border border-gray-700 p-8 
                       hover:shadow-lg transition-all duration-300 flex flex-col">
 
                 <!-- Headline -->
-                <h3 class="text-xl md:text-2xl font-bold mb-6 text-gray-900">
+                <h3 class="text-xl md:text-2xl font-bold mb-6 text-white">
                     Scale Clinical Data Validation with Confidence
                 </h3>
 
                 <!-- Bullets -->
-                <ul class="space-y-4 text-gray-700 mb-8 flex-grow">
+                <ul class="space-y-4 text-gray-300 mb-8 flex-grow">
                     <li class="flex gap-3 items-start">
-                        <span class="text-blue-600 font-bold text-lg flex-shrink-0">•</span>
+                        <span class="font-bold text-lg flex-shrink-0" style="color: var(--bg-primary);">•</span>
                         <span class="text-sm md:text-base">Reduce reliance on manual QC and double programming</span>
                     </li>
                     <li class="flex gap-3 items-start">
-                        <span class="text-blue-600 font-bold text-lg flex-shrink-0">•</span>
+                        <span class="font-bold text-lg flex-shrink-0" style="color: var(--bg-primary);">•</span>
                         <span class="text-sm md:text-base">Standardize validation across studies and sponsors</span>
                     </li>
                     <li class="flex gap-3 items-start">
-                        <span class="text-blue-600 font-bold text-lg flex-shrink-0">•</span>
+                        <span class="font-bold text-lg flex-shrink-0" style="color: var(--bg-primary);">•</span>
                         <span class="text-sm md:text-base">Accelerate dataset readiness without increasing
                             headcount</span>
                     </li>
                 </ul>
 
                 <!-- Outcome Highlight -->
-                <div class="mb-8 p-4 bg-blue-50 rounded-lg border border-blue-200">
-                    <p class="text-blue-700 font-semibold text-sm md:text-base">
+                <div class="mb-8 p-4 rounded-lg border border-gray-700"
+                    style="background-color: rgba(65, 122, 227, 0.1);">
+                    <p class="font-semibold text-sm md:text-base" style="color: var(--bg-primary);">
                         ✔ Faster delivery · Predictable quality · Lower operational burden
                     </p>
                 </div>
 
                 <!-- CTA -->
-                <button type="submit"
-                    class="flex items-center text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 w-fit mx-auto">
-                    View CRO Demo <mat-icon class="text-base"> keyboard_arrow_right </mat-icon>
+                <button
+                    class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+                    style="background-color: var(--bg-primary); color: white;"
+                    onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+                    onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+                    View CRO Demo →
                 </button>
-
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 
+            <div class="bg-gray-800 rounded-xl shadow-sm border border-gray-700 p-8 
                       hover:shadow-lg transition-all duration-300 flex flex-col">
 
                 <!-- Headline -->
-                <h3 class="text-xl md:text-2xl font-bold mb-6 text-gray-900">
+                <h3 class="text-xl md:text-2xl font-bold mb-6 text-white">
                     Strengthen Confidence in Submissions
                 </h3>
 
                 <!-- Bullets -->
-                <ul class="space-y-4 text-gray-700 mb-8 flex-grow">
+                <ul class="space-y-4 text-gray-300 mb-8 flex-grow">
                     <li class="flex gap-3 items-start">
-                        <span class="text-blue-600 font-bold text-lg flex-shrink-0">•</span>
+                        <span class="font-bold text-lg flex-shrink-0" style="color: var(--bg-primary);">•</span>
                         <span class="text-sm md:text-base">Detect discrepancies earlier in the analysis lifecycle</span>
                     </li>
                     <li class="flex gap-3 items-start">
-                        <span class="text-blue-600 font-bold text-lg flex-shrink-0">•</span>
+                        <span class="font-bold text-lg flex-shrink-0" style="color: var(--bg-primary);">•</span>
                         <span class="text-sm md:text-base">Improve accuracy and consistency of submission
                             datasets</span>
                     </li>
                     <li class="flex gap-3 items-start">
-                        <span class="text-blue-600 font-bold text-lg flex-shrink-0">•</span>
+                        <span class="font-bold text-lg flex-shrink-0" style="color: var(--bg-primary);">•</span>
                         <span class="text-sm md:text-base">Enhance oversight across CRO partners</span>
                     </li>
                 </ul>
 
                 <!-- Outcome Highlight -->
-                <div class="mb-8 p-4 bg-blue-50 rounded-lg border border-blue-200">
-                    <p class="text-blue-700 font-semibold text-sm md:text-base">
+                <div class="mb-8 p-4 rounded-lg border border-gray-700"
+                    style="background-color: rgba(65, 122, 227, 0.1);">
+                    <p class="font-semibold text-sm md:text-base" style="color: var(--bg-primary);">
                         ✔ Higher-quality submissions · Fewer regulatory queries
                     </p>
                 </div>
 
                 <!-- CTA -->
-                <button type="submit"
-                    class="flex items-center text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 w-fit mx-auto">
-                    Explore Sponsor Use Cases <mat-icon class="text-base"> keyboard_arrow_right </mat-icon>
+                <button
+                    class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+                    style="background-color: var(--bg-primary); color: white;"
+                    onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+                    onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+                    Explore Sponsor Use Cases →
                 </button>
-
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 
+            <div class="bg-gray-800 rounded-xl shadow-sm border border-gray-700 p-8 
                       hover:shadow-lg transition-all duration-300 flex flex-col">
 
                 <!-- Headline -->
-                <h3 class="text-xl md:text-2xl font-bold mb-6 text-gray-900">
+                <h3 class="text-xl md:text-2xl font-bold mb-6 text-white">
                     Enable Transparent, Audit-Ready Review
                 </h3>
 
                 <!-- Bullets -->
-                <ul class="space-y-4 text-gray-700 mb-8 flex-grow">
+                <ul class="space-y-4 text-gray-300 mb-8 flex-grow">
                     <li class="flex gap-3 items-start">
-                        <span class="text-blue-600 font-bold text-lg flex-shrink-0">•</span>
+                        <span class="font-bold text-lg flex-shrink-0" style="color: var(--bg-primary);">•</span>
                         <span class="text-sm md:text-base">Improve visibility into validation logic and outcomes</span>
                     </li>
                     <li class="flex gap-3 items-start">
-                        <span class="text-blue-600 font-bold text-lg flex-shrink-0">•</span>
+                        <span class="font-bold text-lg flex-shrink-0" style="color: var(--bg-primary);">•</span>
                         <span class="text-sm md:text-base">Support traceability and audit readiness</span>
                     </li>
                     <li class="flex gap-3 items-start">
-                        <span class="text-blue-600 font-bold text-lg flex-shrink-0">•</span>
+                        <span class="font-bold text-lg flex-shrink-0" style="color: var(--bg-primary);">•</span>
                         <span class="text-sm md:text-base">Align with data integrity and compliance expectations</span>
                     </li>
                 </ul>
 
                 <!-- Outcome Highlight -->
-                <div class="mb-8 p-4 bg-blue-50 rounded-lg border border-blue-200">
-                    <p class="text-blue-700 font-semibold text-sm md:text-base">
+                <div class="mb-8 p-4 rounded-lg border border-gray-700"
+                    style="background-color: rgba(65, 122, 227, 0.1);">
+                    <p class="font-semibold text-sm md:text-base" style="color: var(--bg-primary);">
                         ✔ Clear audit trails · Efficient review processes
                     </p>
                 </div>
 
                 <!-- CTA -->
-                <button type="submit"
-                    class="flex items-center text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 w-fit mx-auto">
-                    Request QA / Regulatory Walkthrough <mat-icon class="text-base"> keyboard_arrow_right </mat-icon>
+                <button
+                    class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+                    style="background-color: var(--bg-primary); color: white;"
+                    onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+                    onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+                    Request QA/Regulatory Walkthrough →
                 </button>
-
             </div>
 
         </div>
@@ -618,54 +646,64 @@
 </section>
 
 <!-- Explore KWALIFY’s -->
-<section class="py-10 bg-gradient-to-b from-gray-50 to-white">
+<section class="py-16 md:py-24 bg-[#0d1117]">
     <div class="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8 px-6">
 
         <!-- Section Heading -->
-        <div class="text-center mb-7">
-            <h1 class="text-2xl lg:text-4xl font-bold mb-6">
-                Explore KWALIFY’s Proof of Concept
+        <div class="text-left md:text-center mb-7">
+            <h1 class="text-2xl lg:text-4xl font-bold mb-6 text-secondary font-heading">
+                Explore <strong style="color: var(--bg-primary);">KWALIFY’s</strong> Proof of Concept
             </h1>
-            <p class="text-sm lg:text-lg text-gray-600 max-w-3xl mx-auto">
+
+            <p class="text-sm lg:text-lg text-white max-w-3xl mx-auto">
                 Experience intelligent clinical data validation in action and see how KWALIFY strengthens data accuracy,
                 regulatory confidence, and operational efficiency.
             </p>
         </div>
 
-        <div class="mt-8 text-center">
-            <button type="submit"
-                class="flex items-center text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 w-fit mx-auto">
-                Request a Personalized Demo <mat-icon class="text-sm"> keyboard_arrow_right </mat-icon>
+        <div class="mt-8 text-center gap-2 flex flex-col sm:flex-row justify-center">
+            <button
+                class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+                style="background-color: var(--bg-primary); color: white;"
+                onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+                onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+                Request a Personalized Demo →
+            </button>
+            <button
+                class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+                style="background-color: var(--bg-primary); color: white;"
+                onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+                onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+                Talk to a Clinical Data Expert →
             </button>
         </div>
     </div>
 </section>
 
 <!-- Frequently Asked Questions -->
-<section class="py-16 md:py-24 bg-gray-50">
+<section class="py-16 md:py-24 bg-gray-900">
     <div class="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8">
-
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 md:mb-16 text-gray-900">
-            Frequently Asked Questions
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-left md:text-center mb-6 md:mb-16 text-white font-heading">
+            <span style="color: var(--bg-primary);">Frequently</span> Asked Questions
         </h2>
-
         <div class="max-w-3xl mx-auto">
             <mat-accordion multi="false" class="flex flex-col gap-3 space-y-2">
 
                 <!-- Panel 1 -->
                 <mat-expansion-panel #faqpanel1 hideToggle
-                    class="!bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-50">
-                        <mat-panel-title class="text-sm md:text-md font-bold text-gray-900">
+                    class="!bg-gray-800 border border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-700">
+                        <mat-panel-title class="text-sm md:text-md font-bold" style="color: white;">
                             What is KWALIFY?
                         </mat-panel-title>
 
-                        <mat-icon class="ml-auto text-blue-600 border border-gray-300 rounded-full p-1">
+                        <mat-icon class="ml-auto border border-gray-600 rounded-full p-1"
+                            style="color: var(--bg-primary);">
                             {{ faqpanel1.expanded ? 'arrow_upward' : 'arrow_downward' }}
                         </mat-icon>
                     </mat-expansion-panel-header>
 
-                    <p class="text-sm md:text-base text-gray-700 leading-relaxed px-0 py-3 border-t border-gray-200">
+                    <p class="text-sm md:text-base text-gray-300 leading-relaxed px-0 py-3 border-t border-gray-700">
                         KWALIFY™ is an <strong class="font-semibold">intelligent clinical data validation and
                             verification platform</strong>
                         developed by
@@ -678,18 +716,19 @@
 
                 <!-- Panel 2 -->
                 <mat-expansion-panel #faqpanel2 hideToggle
-                    class="!bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-50">
-                        <mat-panel-title class="text-sm md:text-md font-bold text-gray-900">
+                    class="!bg-gray-800 border border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-700">
+                        <mat-panel-title class="text-sm md:text-md font-bold" style="color: white;">
                             How does KWALIFY validate clinical trial data?
                         </mat-panel-title>
 
-                        <mat-icon class="ml-auto text-blue-600 border border-gray-300 rounded-full p-1">
+                        <mat-icon class="ml-auto border border-gray-600 rounded-full p-1"
+                            style="color: var(--bg-primary);">
                             {{ faqpanel2.expanded ? 'arrow_upward' : 'arrow_downward' }}
                         </mat-icon>
                     </mat-expansion-panel-header>
 
-                    <p class="text-sm md:text-base text-gray-700 leading-relaxed px-0 py-3 border-t border-gray-200">
+                    <p class="text-sm md:text-base text-gray-300 leading-relaxed px-0 py-3 border-t border-gray-700">
                         KWALIFY applies <strong class="font-semibold">semantic relationships, inference techniques,
                             contextual
                             validation,</strong> and
@@ -702,18 +741,19 @@
 
                 <!-- Panel 3 -->
                 <mat-expansion-panel #faqpanel3 hideToggle
-                    class="!bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-50">
-                        <mat-panel-title class="text-sm md:text-md font-bold text-gray-900">
+                    class="!bg-gray-800 border border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-700">
+                        <mat-panel-title class="text-sm md:text-md font-bold" style="color: white;">
                             How is KWALIFY different from double programming?
                         </mat-panel-title>
 
-                        <mat-icon class="ml-auto text-blue-600 border border-gray-300 rounded-full p-1">
+                        <mat-icon class="ml-auto border border-gray-600 rounded-full p-1"
+                            style="color: var(--bg-primary);">
                             {{ faqpanel3.expanded ? 'arrow_upward' : 'arrow_downward' }}
                         </mat-icon>
                     </mat-expansion-panel-header>
 
-                    <p class="text-sm md:text-base text-gray-700 leading-relaxed px-0 py-3 border-t border-gray-200">
+                    <p class="text-sm md:text-base text-gray-300 leading-relaxed px-0 py-3 border-t border-gray-700">
                         Unlike <strong class="font-semibold">double programming</strong>, which relies heavily on manual
                         effort and duplicate
                         code, KWALIFY
@@ -726,39 +766,40 @@
 
                 <!-- Panel 4 -->
                 <mat-expansion-panel #faqpanel4 hideToggle
-                    class="!bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-50">
-                        <mat-panel-title class="text-sm md:text-md font-bold text-gray-900">
+                    class="!bg-gray-800 border border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-700">
+                        <mat-panel-title class="text-sm md:text-md font-bold" style="color: white;">
                             Who should use KWALIFY?
                         </mat-panel-title>
 
-                        <mat-icon class="ml-auto text-blue-600 border border-gray-300 rounded-full p-1">
+                        <mat-icon class="ml-auto border border-gray-600 rounded-full p-1"
+                            style="color: var(--bg-primary);">
                             {{ faqpanel4.expanded ? 'arrow_upward' : 'arrow_downward' }}
                         </mat-icon>
                     </mat-expansion-panel-header>
 
-                    <div class="px-6 py-4 border-t border-gray-200">
+                    <div class="px-6 py-4 border-t border-gray-700">
                         <!-- Headline -->
-                        <p class="text-base font-semibold text-gray-900 mb-4">
+                        <p class="text-base font-semibold text-white mb-4">
                             KWALIFY is designed for:
                         </p>
 
                         <!-- Bullets -->
-                        <ul class="space-y-3 text-gray-700">
+                        <ul class="space-y-3 text-gray-300">
                             <li class="flex gap-3 items-start">
-                                <span class="text-blue-600 font-bold text-lg flex-shrink-0">•</span>
+                                <span class="font-bold text-lg flex-shrink-0" style="color: var(--bg-primary);">•</span>
                                 <span class="text-sm md:text-base">Contract Research Organizations (CROs)</span>
                             </li>
                             <li class="flex gap-3 items-start">
-                                <span class="text-blue-600 font-bold text-lg flex-shrink-0">•</span>
+                                <span class="font-bold text-lg flex-shrink-0" style="color: var(--bg-primary);">•</span>
                                 <span class="text-sm md:text-base">Pharmaceutical & Biotech Sponsors</span>
                             </li>
                             <li class="flex gap-3 items-start">
-                                <span class="text-blue-600 font-bold text-lg flex-shrink-0">•</span>
+                                <span class="font-bold text-lg flex-shrink-0" style="color: var(--bg-primary);">•</span>
                                 <span class="text-sm md:text-base">Clinical Data Management & Biostatistics Teams</span>
                             </li>
                             <li class="flex gap-3 items-start">
-                                <span class="text-blue-600 font-bold text-lg flex-shrink-0">•</span>
+                                <span class="font-bold text-lg flex-shrink-0" style="color: var(--bg-primary);">•</span>
                                 <span class="text-sm md:text-base">Quality Assurance & Regulatory Affairs
                                     Professionals</span>
                             </li>
@@ -768,18 +809,19 @@
 
                 <!-- Panel 5 -->
                 <mat-expansion-panel #faqpanel5 hideToggle
-                    class="!bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-50">
-                        <mat-panel-title class="text-sm md:text-md font-bold text-gray-900">
+                    class="!bg-gray-800 border border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-700">
+                        <mat-panel-title class="text-sm md:text-md font-bold" style="color: white;">
                             Is KWALIFY suitable for regulatory submissions?
                         </mat-panel-title>
 
-                        <mat-icon class="ml-auto text-blue-600 border border-gray-300 rounded-full p-1">
+                        <mat-icon class="ml-auto border border-gray-600 rounded-full p-1"
+                            style="color: var(--bg-primary);">
                             {{ faqpanel5.expanded ? 'arrow_upward' : 'arrow_downward' }}
                         </mat-icon>
                     </mat-expansion-panel-header>
 
-                    <p class="text-sm md:text-base text-gray-700 leading-relaxed px-0 py-3 border-t border-gray-200">
+                    <p class="text-sm md:text-base text-gray-300 leading-relaxed px-0 py-3 border-t border-gray-700">
                         Yes. KWALIFY supports <strong class="font-semibold">submission-ready, audit-ready
                             datasets</strong> and aligns with
                         <strong class="font-semibold">regulatory expectations</strong>, including <strong
@@ -790,18 +832,19 @@
 
                 <!-- Panel 6 -->
                 <mat-expansion-panel #faqpanel6 hideToggle
-                    class="!bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-50">
-                        <mat-panel-title class="text-sm md:text-md font-bold text-gray-900">
+                    class="!bg-gray-800 border border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <mat-expansion-panel-header class="!px-6 !py-4 hover:bg-gray-700">
+                        <mat-panel-title class="text-sm md:text-md font-bold" style="color: white;">
                             What types of clinical data does KWALIFY support?
                         </mat-panel-title>
 
-                        <mat-icon class="ml-auto text-blue-600 border border-gray-300 rounded-full p-1">
+                        <mat-icon class="ml-auto border border-gray-600 rounded-full p-1"
+                            style="color: var(--bg-primary);">
                             {{ faqpanel6.expanded ? 'arrow_upward' : 'arrow_downward' }}
                         </mat-icon>
                     </mat-expansion-panel-header>
 
-                    <p class="text-sm md:text-base text-gray-700 leading-relaxed px-0 py-3 border-t border-gray-200">
+                    <p class="text-sm md:text-base text-gray-300 leading-relaxed px-0 py-3 border-t border-gray-700">
                         KWALIFY supports <strong class="font-semibold">clinical trial analysis datasets</strong>,
                         including derived variables
                         and structured
@@ -809,6 +852,16 @@
                     </p>
                 </mat-expansion-panel>
             </mat-accordion>
+        </div>
+        <p class="text-white max-w-7xl mx-auto text-center mt-6 opacity-50">Still have questions?</p>
+        <div class="mt-2 text-center gap-2 flex flex-col sm:flex-row justify-center">
+            <button
+                class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+                style="background-color: var(--bg-primary); color: white;"
+                onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+                onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
+                Speak to an expert →
+            </button>
         </div>
     </div>
 </section>

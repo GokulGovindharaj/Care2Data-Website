@@ -1,48 +1,42 @@
-// Include theming for Angular Material with `mat.theme()`.
-// This Sass mixin will define CSS variables that are used for styling Angular Material
-// components according to the Material 3 design spec.
-// Learn more about theming and how to use it for your application's
-// custom components at https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700;800&display=swap');
+
+/* Angular Material Theme */
 html {
-  @include mat.theme((color: (primary: mat.$azure-palette,
-        tertiary: mat.$blue-palette,
-      ),
-      typography: Roboto,
-      density: 0,
-    ));
+  @include mat.theme((
+    color: (
+      primary: mat.$blue-palette,
+      tertiary: mat.$yellow-palette,
+    ),
+    typography: Roboto,
+    density: 0
+  ));
 }
 
 body {
-  // Default the application to a light color theme. This can be changed to
-  // `dark` to enable the dark color theme, or to `light dark` to defer to the
-  // user's system settings.
   color-scheme: light;
-
-  // Set a default background, font and text colors for the application using
-  // Angular Material's system-level CSS variables. Learn more about these
-  // variables at https://material.angular.dev/guide/system-variables
-
-  color: var(--mat-sys-on-surface);
-  font: var(--mat-sys-body-medium);
-
-  // Reset the user agent margin.
   margin: 0;
+  color: var(--mat-sys-on-surface);
 }
 
-/* You can add global styles to this file, and also import other style files */
+/* Global Variables */
 :root {
-  --font-inter: 'Inter', sans-serif, system-ui;
+  --font-inter: 'Inter', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+
   --bg-primary: #417ae3;
   --bg-secondary: #f0ca33;
+
   --primary-color: #417ae3;
   --secondary-color: #f0ca33;
+
   --container-6xl: 85rem;
   --background-color: #fafafa;
 }
 
-
+/* Layout */
 html,
 body {
   height: 100%;
@@ -50,18 +44,23 @@ body {
 }
 
 body {
-  margin: 0;
   font-family: var(--font-inter);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
+/* Typography */
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+/* Brand Colors */
 .bg-primary {
   background-color: var(--bg-primary);
-  color: var(--secondary-color);
+  color: white;
 }
 
 .bg-secondary {
-  background-color: var(--bg-primary);
+  background-color: var(--bg-secondary);
 }
 
 .text-primary {
@@ -72,32 +71,41 @@ body {
   color: var(--secondary-color);
 }
 
+/* Container */
 .max-w-6xl {
   max-width: var(--container-6xl);
 }
 
+/* Section Background */
 .bg-react {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 100%) rgba(255, 255, 255, 0.8);
+  background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    );
   width: 100%;
-  opacity: 1;
 }
 
+/* Navigation */
 .nav-link {
-  @apply font-medium opacity-75 hover:text-blue-600 transition duration-200;
+  @apply font-medium opacity-75 hover:text-[var(--primary-color)] transition duration-200;
 }
 
 .mobile-link {
-  @apply block font-medium opacity-75 hover:text-blue-600 transition duration-200;
+  @apply block font-medium opacity-75 hover:text-[var(--primary-color)] transition duration-200;
 }
 
+/* Angular Material Fix */
 .mat-mdc-form-field-subscript-wrapper {
   height: 0;
   margin: 0;
 }
 
+/* Material Icons */
 a mat-icon,
 button mat-icon {
   font-size: 20px !important;
-  width: 20px !important;
-  height: 20px !important;
+  width: 22px !important;
+  height: 25px !important;
 }
