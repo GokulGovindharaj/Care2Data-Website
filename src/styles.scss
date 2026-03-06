@@ -3,16 +3,15 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700;800&display=swap');
 
+
+
 /* Angular Material Theme */
 html {
-  @include mat.theme((
-    color: (
-      primary: mat.$blue-palette,
-      tertiary: mat.$yellow-palette,
-    ),
-    typography: Roboto,
-    density: 0
-  ));
+  @include mat.theme((color: (primary: mat.$blue-palette,
+        tertiary: mat.$yellow-palette,
+      ),
+      typography: Roboto,
+      density: 0));
 }
 
 body {
@@ -23,7 +22,7 @@ body {
 
 /* Global Variables */
 :root {
-  --font-inter: 'Inter', sans-serif;
+  --font-inter: 'DM Sans', sans-serif;
   --font-heading: 'Playfair Display', serif;
 
   --bg-primary: #417ae3;
@@ -78,12 +77,10 @@ body {
 
 /* Section Background */
 .bg-react {
-  background: linear-gradient(
-      90deg,
+  background: linear-gradient(90deg,
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.8)
-    );
+      rgba(255, 255, 255, 0.8));
   width: 100%;
 }
 
@@ -108,4 +105,9 @@ button mat-icon {
   font-size: 20px !important;
   width: 22px !important;
   height: 25px !important;
+}
+
+
+button mat-icon {
+  color: white !important;
 }

@@ -1,8 +1,8 @@
-<section class="pt-16 bg-white">
+<section class="pt-16 bg-[#191c21]">
   <div class="max-w-6xl mx-auto px-4 md:px-6">
 
     <!-- Page Title -->
-    <div class="text-center mb-7">
+    <div class="text-center mb-7 text-white">
       <h1 class="text-3xl md:text-5xl font-bold mb-4">
         Contact Us
       </h1>
@@ -14,12 +14,12 @@
 
     <div class="max-w-3xl mx-auto">
 
-      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-6">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="text-white space-y-6">
 
         <!-- Name -->
         <div class="mb-2">
           <p class="mb-2 font-medium">Name</p>
-          <mat-form-field appearance="outline" class="w-full">
+          <mat-form-field appearance="outline" class="w-full border rounded-sm">
             <input matInput formControlName="name" />
           </mat-form-field>
 
@@ -42,7 +42,7 @@
         <!-- Email -->
         <div class="mb-2">
           <p class="mb-2 font-medium">Work Email</p>
-          <mat-form-field appearance="outline" class="w-full">
+          <mat-form-field appearance="outline" class="w-full border rounded-sm">
             <input matInput type="email" formControlName="email" />
           </mat-form-field>
 
@@ -60,7 +60,7 @@
         <!-- Organization -->
         <div class="mb-2">
           <p class="mb-2 font-medium">Organization</p>
-          <mat-form-field appearance="outline" class="w-full">
+          <mat-form-field appearance="outline" class="w-full border rounded-sm">
             <input matInput formControlName="organization" />
           </mat-form-field>
         </div>
@@ -68,7 +68,7 @@
         <!-- Area of Interest Dropdown -->
         <div>
           <p class="mb-2 font-medium">Area of Interest</p>
-          <mat-form-field appearance="outline" class="w-full">
+          <mat-form-field appearance="outline" class="w-full border rounded-sm">
             <mat-select formControlName="interest">
               <mat-option value="About KWALIFY">About KWALIFY</mat-option>
               <mat-option value="Partnerships">Partnerships</mat-option>
@@ -84,7 +84,7 @@
         <!-- Message -->
         <div class="mb-2">
           <p class="mb-2 font-medium">Message</p>
-          <mat-form-field appearance="outline" class="w-full">
+          <mat-form-field appearance="outline" class="w-full border rounded-sm">
             <textarea matInput rows="5" formControlName="message"></textarea>
           </mat-form-field>
 
@@ -100,7 +100,12 @@
         </div>
 
         <!-- Submit Button -->
-        <button  class="my-1 text-xs md:text-sm bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 rounded-md w-full" type="submit" [disabled]="isLoading">
+        <button
+          class="flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer border-2 max-w-3xl mx-auto"
+          style="background-color: var(--bg-secondary); color: #000; border-color: var(--bg-secondary);"
+          onmouseover="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white'; this.style.borderColor='var(--bg-primary)';"
+          onmouseout="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000'; this.style.borderColor='var(--bg-secondary)';"
+          type="submit" [disabled]="isLoading">
           <p class="m-0" *ngIf="!isLoading">Send Message</p>
           <p class="m-0 text-white" *ngIf="isLoading">Sending Message...</p>
         </button>
@@ -109,10 +114,10 @@
 
     </div>
     <!-- DIRECT EMAIL SECTION -->
-    <div class="pt-12">
+    <div class="py-6">
       <div class="max-w-3xl mx-auto px-4 text-center">
 
-        <h2 class="text-xl font-semibold mb-4">
+        <h2 class="text-xl text-white font-semibold mb-4">
           Prefer to email us directly?
         </h2>
 
