@@ -1,5 +1,5 @@
 <!-- About Page -->
-<section class="py-16 bg-[#191c21]">
+<section class="py-16 bg-[#212631]">
   <div class="max-w-6xl mx-auto px-4 md:px-6">
 
     <!-- Page Title -->
@@ -109,14 +109,14 @@
 
 
 <!-- Final Conversion Section -->
-<section class="py-16 bg-gradient-to-b from-gray-50 to-white">
+<section class="py-16 bg-[#292e3d]">
   <div class="max-w-5xl mx-auto px-6 text-center">
 
-    <h2 class="text-2xl md:text-3xl font-bold mb-6">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-white">
       From Data to Knowledge. From Knowledge to Confidence.
     </h2>
 
-    <p class="text-gray-600 max-w-2xl mx-auto mb-10">
+    <p class="text-gray-500 max-w-2xl mx-auto mb-10">
       We help life sciences organizations move from fragmented datasets
       to connected intelligence — enabling compliance, innovation, and confidence at scale.
     </p>
@@ -124,18 +124,19 @@
     <div class="flex flex-wrap justify-center gap-6">
 
       <a routerLink="/contact"
-        class="inline-flex items-center gap-2 cursor-pointer
-                bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 w-fit">
-
+        class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer"
+        style="background-color: var(--bg-primary); color: white;"
+        onmouseover="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000';"
+        onmouseout="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white';">
         Contact Us
-        <!-- <mat-icon class="text-sm">keyboard_arrow_right</mat-icon> -->
       </a>
 
       <a routerLink="/contact"
-        class="inline-flex items-center gap-2 cursor-pointer
-               bg-blue-600 px-6 py-3 cursor-pointer rounded-xl text-white font-semibold transition duration-700 border-2 hover:bg-white hover:text-blue-600 hover:border-blue-600 hover:transition hover:duration-900 w-fit">
-        Explore Engagement Models
-        <mat-icon class="text-sm">keyboard_arrow_right</mat-icon>
+        class="inline-flex items-center justify-center gap-2 text-xs md:text-sm px-6 py-3 cursor-pointer rounded-sm font-semibold transition duration-700 cursor-pointer border-2"
+        style="background-color: var(--bg-secondary); color: #000; border-color: var(--bg-secondary);"
+        onmouseover="this.style.backgroundColor='var(--bg-primary)'; this.style.color='white'; this.style.borderColor='var(--bg-primary)';"
+        onmouseout="this.style.backgroundColor='var(--bg-secondary)'; this.style.color='#000'; this.style.borderColor='var(--bg-secondary)';">
+        Explore Engagement Models →
       </a>
 
     </div>

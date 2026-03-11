@@ -119,7 +119,7 @@ export class Contact {
         }
       });
     } else {
-      this.toastr.error('Please fill out the form correctly before submitting.');
+      this.toastr.error('Please fill all required fields.');
       this.isLoading = false;
     }
   }
